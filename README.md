@@ -1,2 +1,33 @@
 # Programacion
-Todo sobre asignatura programación 1 DAM
+Asignatura de Programación
+## Boletines Asignatura Programacion de primera evaluación
+
+
+- [Boletín 1](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin01) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Boletín sencillo sobre como calcular el área de un triángulo**  
+- [Boletín 2](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin02)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Boletín sencillo sobre como calcular el área de un cuadrado**  
+- [Boletín 3](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin03)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Boletín para pasar de euros a dolares**  
+- [Boletín 4](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin04)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Primer boletín con clases y métodos sobre libros**  
+- [Boletín 5](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin05)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Boletín con clases sobre consumo de vehículos**  
+- [Boletín 6_1](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin06) &nbsp;&nbsp;&nbsp; **Boletín con clases sobre coches con métodos acelerar y frenar**  
+- [Boletín 6_2](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin06_2/pkg2)  &nbsp;&nbsp;&nbsp;  **Boleín con clases sobre satélites**  
+- [Boletín 6_3](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin06_3)  &nbsp;&nbsp;&nbsp;  **Boletín con clases para cálculo área y longitud de circunferencia**  
+- [Extra 1](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/extra1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **Boletín extra con clases sobre cuentas bancarias**  
+- [Boletín 7_1](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin07_1)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con clases para comprobar si un número es positivo**  [ORDINOGRAMA](https://drive.google.com/drive/u/1/folders/1YV-AWzcGWdPpEq91GNI7oUjNVaWORQgk)  
+- [Boletín 7_2](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin07_2)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con condicional que suma o resta en función de mayor o menor** [ORDINOGRAMA](https://drive.google.com/drive/u/1/folders/1YV-AWzcGWdPpEq91GNI7oUjNVaWORQgk)  
+- [Boletín 7_3](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin07_3)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con condicional que analiza si un número es positivo,negativo o 0**  [ORDINOGRAMA](https://drive.google.com/drive/u/1/folders/1YV-AWzcGWdPpEq91GNI7oUjNVaWORQgk)  
+- [Boletín 7_4](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin07_4)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con clases con condicional que evalúa el peso de dos personas**  
+- [Boletín 7_5](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin07_5)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con clases con condicional que evalúa cual de 3 número es el mayor**  
+- [Boletín 8_1](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin08_1)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con condicional que tipo de producto según consumo en almacén**  
+- [Boletín 8_2](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin08_2)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con menú switch para mostrar superficie figura**  
+- [Boletín 9_1](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin09_1)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con for que analiza si un numero es positivo o no**  
+- [Boletín 9_2](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin09_2)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con for muestra suma y producto de los números entre 10 y 90**  
+- [Boletín 9_3](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin09_3)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con DoWhile que valida base y altura positiva del rectángulo**  
+- [Boletín 9_4](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin09_4)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con for y DoWhile que muestra tabla de multiplicar**  
+- [Boletín 9_5](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin09_5)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con DoWhile que cuenta y muestra trabajadores en función del sueldo**
+- [Boletín 11_1](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin11_01)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con DoWhile con juego de dos jugadores para adivinar número**  
+- [Boletín 11_2](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/boletin11_02)  &nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con DoWhile con juego contra máquina para adivinar número**
+- [Extra 2_1](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/extra2_1)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con condicionales para cálculo cuota socio**   
+- [Extra 2_2](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/boletinesPrimeraEvaluacion/extra2_2)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **Boletín con condicionales switch case que comprueba validez de fecha**  
+- [Proyecto Examen B](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/proyectoExamen) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Ejercicio sobre cálculo de sueldo de docentes universitarios**
+
+## Boletines Asignatura Programacion de segunda evaluación
