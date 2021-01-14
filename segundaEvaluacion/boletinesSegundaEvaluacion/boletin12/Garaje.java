@@ -1,5 +1,7 @@
 package boletin12;
 
+import javax.swing.*;
+
 /**
  * Creado por @autor: Usuario
  * El 13/01/2021
@@ -55,15 +57,30 @@ public class Garaje {
                 '}';
     }
 
-    public void comprobarSitio(){
-        if (numeroCoches<COMPLETO) {
-            System.out.println("Plazas disponibles");
+    public void comprobarSitio(Coche coche) {
+        if (numeroCoches < COMPLETO) {
+            JOptionPane.showMessageDialog(null,"Plazas disponibles = " + (COMPLETO - numeroCoches));
+            numeroCoches++;
+            JOptionPane.showMessageDialog(null,"Coche" + Coche + " ingresado en garaje");
 
-
-        }
-
-            else
+        } else
             System.out.println("Completo");
     }
-
+    public float calcularPrecio(){
+        float tiempoCliente;
+        float precioFinal=0;
+        tiempoCliente=Float.parseFloat(JOptionPane.showInputDialog("Minutos ha estado cliente en garaje"));
+        if (tiempoCliente<=180){
+            precioFinal=(tiempoCliente/60)*1.5F;
+        }
+        else if (tiempoCliente>180){
+            precioFinal=((tiempoCliente-180)/60) * 0.20F + 3;
+        }
+         JOptionPane.showMessageDialog(null,"Factura:\n" +
+             Coche
+                 + "\nTiempo total: "
+                 + tiempoCliente+ "\nPrecio: "
+                 + precioFinal);
+        return precioFinal;
+    }
 }

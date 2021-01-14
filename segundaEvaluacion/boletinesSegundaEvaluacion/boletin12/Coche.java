@@ -10,7 +10,12 @@ private String matricula;
 public Coche(){
 }
 
-public Coche(String matricula){
+    @Override
+    public String toString() {
+        return "Matricula= " + matricula;
+    }
+
+    public Coche(String matricula){
     this.matricula=matricula;
 }
 }
