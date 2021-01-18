@@ -23,6 +23,7 @@ public class Garaje {
         Coche = coche;
     }
 
+
     public int getNumeroCoches() {
         return numeroCoches;
     }
