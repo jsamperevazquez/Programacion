@@ -43,9 +43,10 @@ public class Mamifero implements IPodeCamiñar{
 
     @Override
     public float verVelocidad() {
-        float espacio= Float.parseFloat(JOptionPane.showInputDialog(null,"Espacio recorrido por el mamífero"));
-        float tiempo=Float.parseFloat(JOptionPane.showInputDialog(null,"Velocidad del mamífero"));;
+        float espacio= Float.parseFloat(JOptionPane.showInputDialog(null,"Kms recorrido por el mamífero"));
+        float tiempo=Float.parseFloat(JOptionPane.showInputDialog(null,"Tiempo en horas que ha tardado"));;
         float velocidad=espacio/tiempo;
+        JOptionPane.showMessageDialog(null,"Va a una velocidad de " + velocidad + " KM/H");
         return velocidad;
     }
 }

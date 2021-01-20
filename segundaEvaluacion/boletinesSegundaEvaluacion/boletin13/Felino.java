@@ -20,9 +20,10 @@ public class Felino extends Mamifero implements IPodeNadar{
 
     @Override
     public float verDistancia() {
-        float tiempo=Float.parseFloat(JOptionPane.showInputDialog(null,"Tiempo transcurrido en trayecto"));
-        float velocidad=Float.parseFloat(JOptionPane.showInputDialog(null,"Velocidad media de tramo"));
+        float tiempo=Float.parseFloat(JOptionPane.showInputDialog(null,"Tiempo en horas transcurrido en trayecto"));
+        float velocidad=Float.parseFloat(JOptionPane.showInputDialog(null,"Velocidad media de tramo en Km"));
         float distanciaRecorrida=velocidad/tiempo;
+        JOptionPane.showMessageDialog(null,"Ha recorrido una distancia de " + distanciaRecorrida + " KMs");
         return distanciaRecorrida;
     }
 }

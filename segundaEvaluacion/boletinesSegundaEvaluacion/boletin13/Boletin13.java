@@ -6,6 +6,10 @@ package boletin13;
  **/
 public class Boletin13 {
     public static void main(String[] args) {
+        Gato gato1 = new Gato(4,"Carnivoro","Felis silvestris catus","Siamés");
+        gato1.verVelocidad();
 
+        Murcielago murcielago1 = new Murcielago(2,"mamifero placentero","Panamá");
+        murcielago1.verAlturaVuelo();
     }
 }
