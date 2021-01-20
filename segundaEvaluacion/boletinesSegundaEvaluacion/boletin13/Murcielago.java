@@ -21,7 +21,8 @@ public class Murcielago extends Mamifero implements IPodeVoar{
     public float verAlturaVuelo() {
         float distanciaX=Float.parseFloat(JOptionPane.showInputDialog(null,"Distancia horizontal X en metros"));
         float angulo=Float.parseFloat(JOptionPane.showInputDialog(null,"Ángulo alfa"));
-        float alturaVuelo= (float) Math.tan(angulo)*distanciaX;
+        float anguloRadianes=angulo * 0.017F;
+        float alturaVuelo= (float) Math.tan(anguloRadianes)*distanciaX;
         JOptionPane.showMessageDialog(null,"Está a una altura de " +alturaVuelo + " metros");
         return alturaVuelo;
     }

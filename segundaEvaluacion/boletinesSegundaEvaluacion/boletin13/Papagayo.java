@@ -19,7 +19,8 @@ public class Papagayo extends Aves implements IPodeVoar{
     public float verAlturaVuelo() {
         float distanciaX=Float.parseFloat(JOptionPane.showInputDialog(null,"Distancia horizontal X"));
         float angulo=Float.parseFloat(JOptionPane.showInputDialog(null,"Ángulo alfa"));
-        float alturaVuelo= (float) Math.tan(angulo)*distanciaX;
+        float anguloRadianes=angulo * 0.017F;
+        float alturaVuelo= (float) Math.tan(anguloRadianes)*distanciaX;
         return alturaVuelo;
     }
 }

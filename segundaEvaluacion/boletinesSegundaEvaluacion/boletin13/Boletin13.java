@@ -14,5 +14,6 @@ public class Boletin13 {
 
         Tigre tigre1 = new Tigre(4,"Carnivoro","Pantera tigris","Sumatra");
         tigre1.verDistancia();
+
     }
 }
