@@ -11,5 +11,8 @@ public class Boletin13 {
 
         Murcielago murcielago1 = new Murcielago(2,"mamifero placentero","Panamá");
         murcielago1.verAlturaVuelo();
+
+        Tigre tigre1 = new Tigre(4,"Carnivoro","Pantera tigris","Sumatra");
+        tigre1.verDistancia();
     }
 }
