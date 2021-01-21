@@ -69,4 +69,13 @@ public class DivisionExc {
         else
             System.out.println("Resultado de la división " + numerador/denominador);
     }
+    public void dividirNuestraExcepcion (int numerador, int denominador) throws NuestraExcpcion{
+        System.out.println(" Antes de propagar la excepción");
+        if (denominador==0)
+            throw new NuestraExcpcion(" No dividir un entero entre 0 ");
+        else
+            System.out.println("Resultado de la división " + numerador/denominador);
+
+
+    }
 }

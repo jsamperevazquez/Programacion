@@ -7,10 +7,10 @@ package ejemploExcepciones;
 public class EjemploExcepciones {
     public static void main(String[] args) {
         DivisionExc objetoDiv = new DivisionExc();
-            try {
-                objetoDiv.dividirPropagandoExcepciones(8,0);
-            }catch (ArithmeticException es){
-                System.out.println("error"+ es.getMessage());
-            }
-    }
+        try {
+            objetoDiv.dividirNuestraExcepcion(6, 0);
+        }catch (NuestraExcpcion es){
+            System.out.println(es.getMessage());
+        }
+        }
 }
