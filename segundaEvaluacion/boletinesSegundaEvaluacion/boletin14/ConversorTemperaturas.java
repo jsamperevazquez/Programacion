@@ -5,7 +5,7 @@ package boletin14;
  * El  21 de ene. de 2021.
  **/
 public class ConversorTemperaturas {
-public static final float temperaturaMinima=80F;
+public static final float TEMPERATURA_MINIMA =80F;
 
     public ConversorTemperaturas() {
     }
