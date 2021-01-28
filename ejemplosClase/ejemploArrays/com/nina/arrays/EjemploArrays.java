@@ -8,9 +8,11 @@ public class EjemploArrays {
     public static void main(String[] args) {
         float [] temoeraturas = {8,10,12,3.5F,5};
         Metodos objetoMetodos = new Metodos();
+        objetoMetodos.ordenarDirecto(temoeraturas);
         objetoMetodos.mostrarArray(temoeraturas);
-        objetoMetodos.mostrarArrayForEach(temoeraturas);
-        objetoMetodos.ordenarColeccion(temoeraturas);
+        //objetoMetodos.mostrarArrayForEach(temoeraturas);
+        //objetoMetodos.ordenarColeccion(temoeraturas);
+
     }
 
 }
