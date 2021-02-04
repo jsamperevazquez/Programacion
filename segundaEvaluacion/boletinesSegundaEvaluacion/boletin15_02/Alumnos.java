@@ -7,7 +7,7 @@ import java.util.Arrays;
  * El  04 de feb. de 2021.
  **/
 public class Alumnos {
-    static final int tamanoDam=8;
+    static final int tamanoDam=30;
     static int[] notaAlumno;
 
     public static int[] getNotaAlumno() {
