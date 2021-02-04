@@ -4,7 +4,7 @@ package ejemploArrayObjetos;
  * Creado por @autor: angel
  * El  30 de ene. de 2021.
  **/
-public class Alumno {
+public class Alumno implements Comparable {
     private String nombre;
     private int nota;
     private String dni;
@@ -48,5 +48,16 @@ public class Alumno {
                 "nombre= " + nombre +
                 " nota= " + nota +
                 " dni= " + dni;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Alumno al= (Alumno) o; // esto castea o a Alumno
+        if (this.dni.compareToIgnoreCase(al.dni)<0)
+            return -1;
+        else if (dni.compareToIgnoreCase(al.dni)>0)
+            return 1;
+        else
+            return 0;
     }
 }

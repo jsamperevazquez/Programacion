@@ -1,6 +1,8 @@
 package ejemploArrayObjetos;
 
 import javax.swing.*;
+import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * Creado por @autor: angel
@@ -58,4 +60,28 @@ public class Metodos {
 
         }
     }
+    public void ordenarDirecto (Alumno []lista){
+        Alumno aux;
+        for (int i = 0; i <lista.length -1 ; i++) {
+            for (int j = i+1; j < lista.length; j++) {
+                if (lista[i].getDni().compareToIgnoreCase(lista[j].getDni())>0){
+                   aux= lista[i];
+                   lista[i]=lista[j];
+                   lista[j]= aux;
+                }
+
+
+
+            }
+
+
+        }
+        System.out.println(" **** Lista ordenada ****");
+    }
+    public void ordenarSort(Alumno []lista){
+        Arrays.sort(lista);
+
+
+    }
+
 }

@@ -1,5 +1,4 @@
 package boletin12;
-
 /**
  * Creado por @autor: Angel
  * @version 0.0.1
@@ -28,6 +27,8 @@ public class Boletin12 {
         cliente5.comprobarSitio(coche5);
         cliente6.comprobarSitio(coche6);
         cliente6.calcularPrecio();
+
+
 
     }
 }

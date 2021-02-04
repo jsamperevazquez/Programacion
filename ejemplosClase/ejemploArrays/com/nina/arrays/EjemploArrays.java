@@ -10,8 +10,9 @@ public class EjemploArrays {
         Metodos objetoMetodos = new Metodos();
         objetoMetodos.ordenarDirecto(temoeraturas);
         objetoMetodos.mostrarArray(temoeraturas);
+        objetoMetodos.buscarElementos(temoeraturas);
         //objetoMetodos.mostrarArrayForEach(temoeraturas);
-        //objetoMetodos.ordenarColeccion(temoeraturas);
+        int num1 = 3;
 
     }
 

@@ -15,7 +15,7 @@ public class EjemploArrayObjetos {
         Alumno[] lista = new Alumno[elementosArray];
         do {
 
-            eleccion = Integer.parseInt(JOptionPane.showInputDialog(null, "**** MENU ****\n1- Crear Array\n2- Mostrar Array\n 3- Buscar alumno\n 0- Salir\n*** TECLEA OPCIÓN ***"));
+            eleccion = Integer.parseInt(JOptionPane.showInputDialog(null, "**** MENU ****\n1- Crear Array\n2- Mostrar Array\n 3- Buscar alumno\n 4- Ordenar Directo\n 5- Ordenar Sort\n 0- Salir\n*** TECLEA OPCIÓN ***"));
 
 
             switch (eleccion) {
@@ -28,6 +28,15 @@ public class EjemploArrayObjetos {
                     break;
                 case 3:
                     objetoMetodos.buscarAlumno(lista);
+                    break;
+                case 4:
+                    objetoMetodos.ordenarDirecto(lista);
+                    break;
+                case 5:
+                    objetoMetodos.ordenarSort(lista);
+                    break;
+
+
                 case 0:
                     break;
             }
