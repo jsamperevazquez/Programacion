@@ -6,11 +6,11 @@ import libreriaAngel.ValidarDatos;
 import javax.swing.*;
 
 /**
- * Creado por @autor: Usuario
+ * Creado por @autor: Angel
  * El 04/02/2021
  **/
 public class Alumnos {
-    static final int tamanoDam=5;
+    static final int tamanoDam = 5;
     static int[] notaAlumno;
     static String[] nombresAlumnos;
 
@@ -30,33 +30,71 @@ public class Alumnos {
         return tamanoDam;
     }
 
-    public static int[] arrayNotas(int[] lista){
-        notaAlumno= new int[tamanoDam];
-        for (int i = 0; i <tamanoDam ; i++) {
-            notaAlumno[i]=lista[i];
-            System.out.println(notaAlumno[i]);
-        }
-        return  notaAlumno;
-    }
-    public  String[] arrayNombres(){
-        nombresAlumnos = new String[tamanoDam];
-        for (int i = 0; i <tamanoDam ; i++) {
-            String nombreAlumno=(PedirDatos.pedirString("Introduce el nombre del alumno"));
-            nombresAlumnos[i]=nombreAlumno;
-            System.out.println(nombresAlumnos[i]);
-        }
-        return  nombresAlumnos;
-    }
-    public void buscarNotaAlumno(){
-        String alumnoBuscado= JOptionPane.showInputDialog(null,"Nombre del Alumno que queremos buscar");
-        int contador=0, encotrado=0;
-        String [] listaRepes = new String[tamanoDam];
+    public static int[] arrayNotas(int[] lista) {
+        notaAlumno = new int[tamanoDam];
         for (int i = 0; i < tamanoDam; i++) {
-            if (nombresAlumnos[i].equalsIgnoreCase(alumnoBuscado))
-                System.out.println("La nota del alumno " + nombresAlumnos[i] + " es de un " + notaAlumno[i]);
+            notaAlumno[i] = lista[i];
+        }
+        return notaAlumno;
+    }
 
+    public String[] arrayNombres() {
+        nombresAlumnos = new String[tamanoDam];
+        for (int i = 0; i < tamanoDam; i++) {
+            String nombreAlumno = (PedirDatos.pedirString("Introduce el nombre del alumno"));
+            nombresAlumnos[i] = nombreAlumno;
+        }
+        return nombresAlumnos;
+    }
+    public void buscarNotaAlumnoDeterminado(String alumno) {
+        int alumnoEncontrado = 0;
+        for (int i = 0; i < tamanoDam; i++) {
+            if (nombresAlumnos[i].equalsIgnoreCase(alumno)) {
+                JOptionPane.showMessageDialog(null, "La nota del alumno " + nombresAlumnos[i] + " es de un " + notaAlumno[i]);
+                alumnoEncontrado++;
+            }
 
         }
+        if (alumnoEncontrado == 0)
+            JOptionPane.showMessageDialog(null, "El alumno no está en la lista");
+    }
 
+    public void verArrayNombresyNotas() {
+        for (int i = 0; i < tamanoDam; i++) {
+            JOptionPane.showMessageDialog(null, "El alumno " + nombresAlumnos[i] + " tiene una nota de " + notaAlumno[i]);
+        }
+    }
+
+    public void buscarNotaAlumno() {
+        String alumnoBuscado = JOptionPane.showInputDialog(null, "Nombre del Alumno que queremos buscar");
+        int encontrado = 0;
+        for (int i = 0; i < tamanoDam; i++) {
+            if (nombresAlumnos[i].equalsIgnoreCase(alumnoBuscado)) {
+                JOptionPane.showMessageDialog(null, "La nota del alumno " + nombresAlumnos[i] + " es de un " + notaAlumno[i]);
+                encontrado++;
+            }
+
+        }
+        if (encontrado == 0)
+            JOptionPane.showMessageDialog(null, "El alumno no está en la lista");
+    }
+
+    public void alumnosAprobados() {
+        int contadorAprobados = 0;
+        for (int i = 0; i < tamanoDam; i++) {
+            if (notaAlumno[i] >= 5) {
+                contadorAprobados++;
+
+            }
+        }
+        String[] listaAprobados = new String[contadorAprobados];
+        for (int i = 0, j = 0; i < tamanoDam; i++) {
+            if (notaAlumno[i] >= 5) {
+                listaAprobados[j] = nombresAlumnos[i];
+                JOptionPane.showMessageDialog(null, listaAprobados[j] + " , es un alumno aprobado");
+                j++;
+
+            }
+        }
     }
 }
