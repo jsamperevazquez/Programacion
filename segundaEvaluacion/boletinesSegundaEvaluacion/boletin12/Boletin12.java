@@ -3,7 +3,7 @@ package boletin12;
  * Creado por @autor: Angel
  * @version 0.0.1
  * El 13/01/2021
- * Clase para instanciar objetos en las dos clases del paquete
+ * Clase para instanciar objetos en las dos clases del paquete creado
  **/
 public class Boletin12 {
     public static void main(String[] args) {
