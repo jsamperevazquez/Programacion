@@ -38,11 +38,10 @@ public class Alumnos {
         }
         return  notaAlumno;
     }
-    public  String[] arrayNombres(String nombreAlumno){
-
+    public  String[] arrayNombres(){
         nombresAlumnos = new String[tamanoDam];
         for (int i = 0; i <tamanoDam ; i++) {
-
+            String nombreAlumno=(PedirDatos.pedirString("Introduce el nombre del alumno"));
             nombresAlumnos[i]=nombreAlumno;
             System.out.println(nombresAlumnos[i]);
         }
@@ -53,6 +52,8 @@ public class Alumnos {
         int contador=0, encotrado=0;
         String [] listaRepes = new String[tamanoDam];
         for (int i = 0; i < tamanoDam; i++) {
+            if (nombresAlumnos[i].equalsIgnoreCase(alumnoBuscado))
+                System.out.println("La nota del alumno " + nombresAlumnos[i] + " es de un " + notaAlumno[i]);
 
 
         }

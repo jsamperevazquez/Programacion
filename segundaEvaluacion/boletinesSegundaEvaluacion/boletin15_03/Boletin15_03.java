@@ -18,7 +18,8 @@ public class Boletin15_03 {
             contador++;
         }
         Alumnos objetoAlumno = new Alumnos();
-        objetoAlumno.arrayNombres(PedirDatos.pedirString("Introduce el nombre del alumno"));
+        objetoAlumno.arrayNombres();
+        objetoAlumno.buscarNotaAlumno();
 
     }
 }
