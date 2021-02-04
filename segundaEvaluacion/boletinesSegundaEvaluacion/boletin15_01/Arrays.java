@@ -5,6 +5,7 @@ import javax.swing.*;
 /**
  * Creado por @autor: angel
  * El  03 de feb. de 2021.
+ * @version 0.0.1
  **/
 public class Arrays {
     static final int tamañoArrayAleatorio = 6;
