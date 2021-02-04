@@ -17,6 +17,7 @@ public class Boletin15_02 {
             Alumnos.arrayNotas(lista);
             contador++;
         }
+        // llamo a los métodos.
         objetoAlumno.aprobadosSuspensos();
         objetoAlumno.notamediaClase();
         objetoAlumno.notaMayor();

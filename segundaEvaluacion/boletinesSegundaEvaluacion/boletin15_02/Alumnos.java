@@ -56,6 +56,6 @@ public class Alumnos {
             notas[i]=notaAlumno[i];
         }
         Arrays.sort(notas);
-        System.out.println("La nota más alta es de un  " +notas[tamanoDam - 1]);
+        System.out.println("La nota más alta de la clase es de un  " +notas[tamanoDam - 1]);
     }
 }
