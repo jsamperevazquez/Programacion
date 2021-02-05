@@ -46,6 +46,7 @@ public class Alumnos {
         }
         return nombresAlumnos;
     }
+
     public void buscarNotaAlumnoDeterminado(String alumno) {
         int alumnoEncontrado = 0;
         for (int i = 0; i < tamanoDam; i++) {
@@ -96,5 +97,24 @@ public class Alumnos {
 
             }
         }
+    }
+
+    public void ordenarporNotas(int[] lista) {
+        int auxNota;
+        String auxNombre;
+        for (int i = 0; i < tamanoDam - 1; i++) {
+            for (int j = i + 1; j < tamanoDam; j++) {
+                if (notaAlumno[i] > notaAlumno[j]) {
+                    auxNota = notaAlumno[i];
+                    auxNombre = nombresAlumnos[i];
+                    notaAlumno[i] = notaAlumno[j];
+                    nombresAlumnos[i] = nombresAlumnos[j];
+                    notaAlumno[j] = auxNota;
+                    nombresAlumnos[j] = auxNombre;
+                }
+                }
+
+            }
+        System.out.println("***** Lista ordenada por notas de menor a mayor ******");
     }
 }

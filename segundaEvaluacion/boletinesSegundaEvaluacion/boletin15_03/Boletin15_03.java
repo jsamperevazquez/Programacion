@@ -18,13 +18,13 @@ public class Boletin15_03 {
             Alumnos.arrayNotas(lista); // Voy mandando al método de crear el array todos los datos que voy metiendo
             contador++;
         }
-        Alumnos objetoAlumno = new Alumnos();
+       Alumnos objetoAlumno = new Alumnos();
         objetoAlumno.arrayNombres();
         objetoAlumno.verArrayNombresyNotas();
         objetoAlumno.buscarNotaAlumnoDeterminado("juan");
         objetoAlumno.buscarNotaAlumno();
         objetoAlumno.alumnosAprobados();
-
-
+        objetoAlumno.ordenarporNotas(Alumnos.notaAlumno);
+        objetoAlumno.verArrayNombresyNotas();
     }
 }
