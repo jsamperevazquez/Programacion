@@ -6,6 +6,6 @@ package boletin15_04;
  **/
 public class Boletin15_04 {
     public static void main(String[] args) {
-
+    Dni.hallarModuloDivision();
     }
 }
