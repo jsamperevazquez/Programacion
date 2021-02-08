@@ -12,6 +12,7 @@ public class Dni {
     static int [] numeroDni= new int[23];
     static  char[] dniLetra= new char[23];
     static int  moduloDivisionDni;
+    static int dni;
     /**
     dniLetra={'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'};
     numeroDni={3, 11, 20, 9, 22, 7, 4, 18, 13, 21, 19, 5, 12, 8, 16, 1, 15, 0, 17, 2, 10, 6, 14};
@@ -19,10 +20,18 @@ public class Dni {
     public static int [] hallarModuloDivision(){
 
         for (int i = 0; i <dniLetra.length ; i++) {
-            int dni=Integer.parseInt(JOptionPane.showInputDialog(null,"Introduce el número del dni sin letra"));
-            moduloDivisionDni=dni%23;
-            restoDivision[i]=moduloDivisionDni;
+            try {
 
+                dni = Integer.parseInt(JOptionPane.showInputDialog(null, "Introduce el número del dni sin letra"));
+            }catch (NumberFormatException es){
+                dni=0;
+            }
+            try {
+                moduloDivisionDni = dni % 23;
+                restoDivision[i] = moduloDivisionDni;
+            }catch (ArithmeticException es){
+                System.out.println("No hay D.N.I en esta posición");
+            }
         }
             return restoDivision;
     }
