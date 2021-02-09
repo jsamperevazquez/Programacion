@@ -31,3 +31,12 @@ Asignatura de Programación
 - [Proyecto Examen B](https://github.com/jsamperevazquez/Programacion/tree/main/primeraEvaluacion/proyectoExamen) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Ejercicio sobre cálculo de sueldo de docentes universitarios**
 
 ## Boletines Asignatura Programacion de segunda evaluación
+- [Boletín 12](https://github.com/jsamperevazquez/Programacion/tree/main/segundaEvaluacion/boletinesSegundaEvaluacion/boletin12) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Clase garaje recibe objeto como atributo**  
+- [Boletín 13](https://github.com/jsamperevazquez/Programacion/tree/main/segundaEvaluacion/boletinesSegundaEvaluacion/boletin13) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Boletín sobre interfaces con animales**  
+- [Boletín 14](https://github.com/jsamperevazquez/Programacion/tree/main/segundaEvaluacion/boletinesSegundaEvaluacion/boletin14) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Boletin para tratar excepciones**  
+- [Boletín 15_01](https://github.com/jsamperevazquez/Programacion/tree/main/segundaEvaluacion/boletinesSegundaEvaluacion/boletin15_01) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Boletín con array de numeros aleatorios**
+- [Boletín 15_02](https://github.com/jsamperevazquez/Programacion/tree/main/segundaEvaluacion/boletinesSegundaEvaluacion/boletin15_02) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Boletín con array y métodos sobre notas**  
+- [Boletín 15_03](https://github.com/jsamperevazquez/Programacion/tree/main/segundaEvaluacion/boletinesSegundaEvaluacion/boletin15_03) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Boletín con dos arrays compartiendo índices**  
+- [Boletín 15_04](https://github.com/jsamperevazquez/Programacion/tree/main/segundaEvaluacion/boletinesSegundaEvaluacion/boletin15_04) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Boletín con array con metodo para letra dni**  
+       
+   
