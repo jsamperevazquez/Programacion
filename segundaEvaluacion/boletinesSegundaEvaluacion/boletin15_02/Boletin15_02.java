@@ -1,5 +1,4 @@
 package boletin15_02;
-
 import libreriaAngel.*;
 
 /**
