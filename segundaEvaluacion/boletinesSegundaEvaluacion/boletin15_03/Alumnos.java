@@ -10,7 +10,7 @@ import javax.swing.*;
  * El 04/02/2021
  **/
 public class Alumnos {
-    static final int tamanoDam = 5;
+    static final int tamanoDam = 30;
     static int[] notaAlumno;
     static String[] nombresAlumnos;
 
