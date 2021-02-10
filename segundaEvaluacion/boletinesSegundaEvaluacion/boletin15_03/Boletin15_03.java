@@ -13,7 +13,7 @@ public class Boletin15_03 {
         int contador = 0;
         for (int nota : lista) {
             do { //Valido la nota máxima, porque la mínima ya viene validada por el metodo de mi librería
-                lista[contador] = ValidarDatos.validarIntMenorQueCero();
+                lista[contador] = ValidarDatos.validarIntMenorQueCero("Introduce la nota");
             } while (lista[contador] > 10);
             Alumnos.arrayNotas(lista); // Voy mandando al método de crear el array todos los datos que voy metiendo
             contador++;
