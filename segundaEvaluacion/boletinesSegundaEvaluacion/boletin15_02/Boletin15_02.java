@@ -12,7 +12,7 @@ public class Boletin15_02 {
         int contador = 0;
         for (int nota : lista) {
 
-            lista[contador] = ValidarDatos.validarIntMenorQueCero();
+            lista[contador] = ValidarDatos.validarIntMenorQueCero("Notas");
             Alumnos.arrayNotas(lista);
             contador++;
         }
