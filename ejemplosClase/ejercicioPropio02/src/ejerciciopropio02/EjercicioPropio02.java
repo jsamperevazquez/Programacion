@@ -5,7 +5,7 @@
  */
 package ejerciciopropio02;
 
-import static javafx.beans.binding.Bindings.and;
+
 
 /**
  *
