@@ -1,5 +1,6 @@
 package ejemploMatriz;
 
+
 import libreriaAngel.ValidarDatos;
 
 import javax.swing.*;
@@ -10,15 +11,18 @@ import javax.swing.*;
  **/
 public class MetodosMatriz {
     int [][] tablaNotas;
+    static int filasmedia;
+    static int [] mediaAlumno;
 
     public int[][] crearMatriz(){
-        int filas=Integer.parseInt(JOptionPane.showInputDialog(null,"Introduce el número de filas"));
-        int columnas= Integer.parseInt(JOptionPane.showInputDialog(null,"Introduce el número de columnas"));
+        int filas= ValidarDatos.validarIntMenorQueCero("Introduce número de filas");
+        int columnas=ValidarDatos.validarIntMenorQueCero("Introduce número de columnas");
+        filasmedia=filas;
         tablaNotas = new int[filas][columnas];
+        mediaAlumno=new int[filas];
         for (int i = 0; i <filas ; i++) {
             for (int j = 0; j <columnas ; j++) {
-                tablaNotas[i][j]= ValidarDatos.validarIntMenorQueCero();
-
+                tablaNotas[i][j]= Integer.parseInt(JOptionPane.showInputDialog(null,"Introduce la nota"));
 
             }
 
@@ -41,12 +45,14 @@ public class MetodosMatriz {
                 acumulador=0;
             for (int j = 0; j < tabla[i].length ; j++) {
                 acumulador=acumulador+tabla[i][j];
+                mediaAlumno[i]=acumulador/tabla.length;
+
 
             }
             System.out.println("*** "+acumulador/ tabla.length);
         }
     }
-    public void notaMediaMoudlo (int [][] tabla){
+    public void notaMediaModulo(int [][] tabla){
          int acumulador;
         for (int i = 0; i <tabla[0].length ; i++) {
             acumulador=0;
@@ -58,7 +64,27 @@ public class MetodosMatriz {
         }
     }
     public void ordenarNotas (int [][] tabla, String []listaNombres, int[] listaMedias){
+        int auxNota=0;
+        int aux2Nota=0;
+        for (int i = 0; i <mediaAlumno.length -1; i++) {
+            for (int j = i+1; j < tablaNotas.length; j++) {
+                if (mediaAlumno[i]<mediaAlumno[j])
+                    auxNota=mediaAlumno[i];
+                    mediaAlumno[i]=mediaAlumno[j];
+                    mediaAlumno[j]=auxNota;
+                for (int k = 0; k <tabla[i].length ; k++) {
+                    aux2Nota=tabla[j][k];
+                    tabla[j][k]=tabla[j][k];
+                    tabla[j][k]=aux2Nota;
+                }
 
+
+            }
+            JOptionPane.showMessageDialog(null,"Las notas ordenadas son ");
+            for (int j = 0; j <mediaAlumno.length ; j++) {
+                JOptionPane.showMessageDialog(null,mediaAlumno[i]);
+            }
+        }
 
     }
     }

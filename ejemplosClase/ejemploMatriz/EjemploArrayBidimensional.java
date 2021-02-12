@@ -9,6 +9,7 @@ import javax.swing.*;
 public class EjemploArrayBidimensional {
     public static void main(String[] args) {
         String opcion;
+        String [] nombresAlumnos={"Juan","Francisco","Pepe"};
         MetodosMatriz objetoMetodo = new MetodosMatriz();
         do {
 
@@ -16,7 +17,8 @@ public class EjemploArrayBidimensional {
                     "crear --- CREAR MATRIZ\n" +
                     "mostrar --- MOSTRAR MATRIZ\n" +
                     "mediaalumno --- MEDIA ALUMNO\n" +
-                    "mediamodulo  --- MEDIA MODULO");
+                    "mediamodulo  --- MEDIA MODULO\n" +
+                    "ordenarnotas --- ORDENAR NOTAS");
             switch (opcion) {
                 case "crear":
                     objetoMetodo.crearMatriz();
@@ -28,10 +30,12 @@ public class EjemploArrayBidimensional {
                     objetoMetodo.notaMediaAlumno(objetoMetodo.tablaNotas);
                     break;
                 case "mediamodulo":
-                    objetoMetodo.notaMediaMoudlo(objetoMetodo.tablaNotas);
+                    objetoMetodo.notaMediaModulo(objetoMetodo.tablaNotas);
                     break;
+                case "ordenarnotas":
+                    objetoMetodo.ordenarNotas(objetoMetodo.tablaNotas,nombresAlumnos,MetodosMatriz.mediaAlumno);
 
-                case "fin":
+                    case "fin":
                     System.exit(0);
             }
 
