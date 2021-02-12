@@ -15,7 +15,7 @@ public class Persona {
    private String nombre;
    private int edad;
    private String dni;
-   private final static char sexoDefecto= 'H';
+   private  static char sexoDefecto= 'H';
    private int altura;
    private float peso;
 
