@@ -8,8 +8,9 @@ public class ExtraTablas {
     public static void main(String[] args) {
         Liga.crearTabla();
         Liga.mostrarGoles(Liga.golesJornadas);
-        Liga.sumarGolesJornada();
-        Liga.ordenarMenorMayorGoles(Liga.cantidadGoles);
+        Liga.sumarGolesTodasJornada();
+        Liga.ordenarMenorMayorGolesTotales(Liga.cantidadGoles);
+        Liga.buscarMayorGolesJornada(Liga.golesJornadas,Liga.equipos);
 
     }
 }
