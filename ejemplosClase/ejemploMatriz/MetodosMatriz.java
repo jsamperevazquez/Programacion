@@ -9,7 +9,8 @@ import javax.swing.*;
  * Creado por @autor: angel
  * El  08 de feb. de 2021.
  **/
-public class MetodosMatriz {
+public class
+MetodosMatriz {
     int [][] tablaNotas;
     static int filasmedia;
     static int [] mediaAlumno;
