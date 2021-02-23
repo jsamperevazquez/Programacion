@@ -7,6 +7,7 @@ import libreriaAngel.ValidarDatos;
 import javax.swing.*;
 import javax.swing.text.html.HTMLDocument;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 
 /**
@@ -64,5 +65,13 @@ public class Metodos {
             if (encontrado==0)
                 System.out.println("Alumno no está en la lista");
         }
+    }
+
+    public static void ordenar(ArrayList<Alumno> listaAlumno){
+        Collections.sort(listaAlumno);
+    }
+
+    public static void ordenarComparator(ArrayList<Alumno> lisaAlumno){
+        Collections.sort(lisaAlumno, new OrdenarComparator());
     }
 }
