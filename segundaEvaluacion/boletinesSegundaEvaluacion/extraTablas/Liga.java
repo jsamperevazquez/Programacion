@@ -8,7 +8,9 @@ public class Liga {
     static String[] equipos = {"Barcelona", "Atletico", "R.Madrid", "R.Sociedad", "Sevilla", "Villareal", "Levante", "Betis", "Athletic", "Valencia", "Celta", "Granada", "Osasuna", "Valladolid", "Cadiz", "Alaves", "Eibar", "Elche", "Huesca", "Getafe"};
     static int[][] golesJornadas = new int[20][36];
     static int[] cantidadGoles = new int[20];
-    static int [] equiposMasGoleadores;
+    static String [] equiposMasGoleadores=new String[36];
+    static int[] maxGolesJornada=new int[36];
+    static int mayor,menor,filaMayor,filaMenor,colMayor,colMenor;
     public static String[] getEquipos() {
         return equipos;
     }
@@ -78,18 +80,24 @@ public class Liga {
         }
     }
     public static void buscarMayorGolesJornada(int [][] tabla, String [] lista){
+        mayor=menor=tabla[0][0];
+        filaMayor = filaMenor = colMenor = colMayor=0;
         int auxiliar=0;
         String auxiliarEquipo="";
         int contador=0;
         System.out.println("\n");
-        for (int i = 0; i < tabla[0].length; i++) {
-            for (int j = 0; j <tabla.length; j++) {
-                if (auxiliar<tabla[i][j]){
-                    auxiliar=tabla[i][j];
-                    auxiliarEquipo=equipos[j];
+        for (int j = 0; j < 36; j++) {
+            for (int i = 0; i <20 ; i++) {
+                if (tabla[i][j]>mayor|| tabla[i][j]==mayor) {
+                mayor=tabla[i][j];
+                auxiliarEquipo=lista[i];
                 }
+                }
+            System.out.println("El equipo que más goles ha marcado en la jornada" + (j+1) + " ha sido el " + auxiliarEquipo + " Con " + mayor + " goles");
             }
         }
-        System.out.println("El equipo que más goles ha marcado en la jornada ha sido " + auxiliarEquipo+ " con " +auxiliar + " goles");
-    }
-}
+
+
+            }
+
+
