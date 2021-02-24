@@ -4,8 +4,7 @@ import libreriaAngel.PedirDatos;
 import libreriaAngel.ValidarDatos;
 
 import javax.swing.*;
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.*;
 
 /**
  * Creado por @autor: angel
@@ -27,7 +26,7 @@ public class Libreria {
         String libro_A_Borrar = PedirDatos.pedirString("ISBN del libro");
         Iterator it = listaLibros.iterator();
         while (it.hasNext()) {
-            Libro libro = (Libro) it.next();
+            libro = (Libro) it.next();
             if (libro_A_Borrar.equalsIgnoreCase(libro.getISBN())) {
                 encontrado = 1;
                 JOptionPane.showMessageDialog(null, "Libro " + libro.getTitulo() + " con ISBN " + libro.getISBN() + " vendido");
@@ -52,7 +51,6 @@ public class Libreria {
 
                     }
                 }
-                it.remove();
 
             }
             if (encontrado == 0) {
@@ -61,13 +59,35 @@ public class Libreria {
         }
     }
 
-    public static ArrayList mostrarLibros(){
-        return listaLibros;
+    public static void mostrarLibros(ArrayList listaLibros){
+        Libro lib;
+        Collections.sort(listaLibros, new LibroComparator());
+        Iterator it=listaLibros.iterator();
+
+        while (it.hasNext()) {
+            lib=(Libro)it.next();
+            System.out.println("Libro :" + lib);
+        }
     }
 
     public static int comprobarUnidades(Libro libro) {
         int unidades = libro.getNumeroUnidades();
         return unidades;
+    }
+
+    public static void buscarLibro(ArrayList listaLibros){
+        int encontrado=0;
+        String libroBuscado=PedirDatos.pedirString("Libro que desea buscar");
+        Iterator it= listaLibros.iterator();
+        while (it.hasNext()){
+            Libro lib=(Libro)it.next();
+            if (libroBuscado.equalsIgnoreCase(lib.getTitulo())){
+                encontrado=1;
+                JOptionPane.showMessageDialog(null,"Libro encomtradp:\n" +
+                        lib);
+            }if (encontrado==0)
+                JOptionPane.showMessageDialog(null,"Libro no está en nuestra librería");
+        }
     }
 
     public static void  bajaLibro(Libro libro){
@@ -83,5 +103,5 @@ public class Libreria {
         Libro libro = new Libro(titulo, autor, isbn, precio, numeroUnidades);
         return libro;
     }
-
 }
+
