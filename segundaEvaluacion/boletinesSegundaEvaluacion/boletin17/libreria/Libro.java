@@ -1,21 +1,21 @@
-package boletin17;
+package boletin17.libreria;
 
 /**
  * Creado por @autor: angel
  * El  23 de feb. de 2021.
  **/
 public class Libro {
-    private String titulo,autor,ISBN;
+    private String titulo, autor, ISBN;
     private float precio;
     private int numeroUnidades;
 
     public Libro() {
     }
 
-    public Libro(String titulo, String autor, String ISBN, float precio, int numeroUnidades) {
+    public Libro(String titulo, String autor, float precio, int numeroUnidades) {
         this.titulo = titulo;
         this.autor = autor;
-        this.ISBN = ISBN;
+        this.ISBN = String.valueOf((int) (Math.random() * (10000 - 1000)) + 1000);
         this.precio = precio;
         this.numeroUnidades = numeroUnidades;
     }
@@ -40,9 +40,6 @@ public class Libro {
         return ISBN;
     }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
-    }
 
     public float getPrecio() {
         return precio;
@@ -52,7 +49,7 @@ public class Libro {
         this.precio = precio;
     }
 
-    public int  getNumeroUnidades() {
+    public int getNumeroUnidades() {
         return numeroUnidades;
     }
 
@@ -63,10 +60,10 @@ public class Libro {
     @Override
     public String toString() {
         return
-                "titulo='" + titulo  +
-                ", autor='" + autor +
-                ", ISBN='" + ISBN +
-                ", precio=" + precio +
-                ", numeroUnidades=" + numeroUnidades ;
+                "titulo='" + titulo +
+                        ", autor='" + autor +
+                        ", ISBN='" + ISBN +
+                        ", precio=" + precio +
+                        ", numeroUnidades=" + numeroUnidades;
     }
 }

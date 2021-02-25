@@ -1,5 +1,7 @@
 package boletin17;
 
+import boletin17.libreria.Libreria;
+
 import javax.swing.*;
 
 /**
