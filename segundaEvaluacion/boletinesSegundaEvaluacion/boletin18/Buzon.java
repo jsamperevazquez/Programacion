@@ -1,6 +1,7 @@
 package boletin18;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -17,7 +18,6 @@ public class Buzon {
     }
 
     public static void añadir(Correo c) {
-        c=Correo.correo;
         buzonCorreo.add(c);
     }
 
@@ -77,7 +77,20 @@ public class Buzon {
             return "No existe dicho correo ";
 
     }
+    public static void elimina(int k) {
+        int i;
+        int comprobar = 0;
+        for (i = 0; i < buzonCorreo.size(); i++) {
+            if (i == k) {
+                comprobar ++;
+                buzonCorreo.remove(k);
+                JOptionPane.showMessageDialog(null,"Correo eliminado con éxito");
+            }
+        }
+        if (comprobar == 0)
+            JOptionPane.showMessageDialog(null,"No existe ese correo");
 
+    }
     @Override
     public String toString() {
         return "Buzon{}";

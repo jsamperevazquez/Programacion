@@ -9,11 +9,9 @@ import javax.swing.*;
  * El  25 de feb. de 2021.
  **/
 public class Correo {
-
-    static Correo correo;
-    static String emisor;
-    static String contenidoCorreo;
-    static boolean leido=false;
+    private static Correo correo;
+    private String contenidoCorreo,emisor;
+    boolean leido=false;
     public Correo() {
     }
 
@@ -49,10 +47,10 @@ public class Correo {
 
 
     public static void crearCorreo(){
-        emisor= PedirDatos.pedirString("Introduce el emisor del correo");
-        contenidoCorreo=PedirDatos.pedirString("Introduce el cuerpo del correo");
-        correo=new Correo(contenidoCorreo,emisor,leido);
-        JOptionPane.showMessageDialog(null,"Correo creado con éxito");
+     correo= new Correo(PedirDatos.pedirString("emisor"),PedirDatos.pedirString("contenido"),false);
+    }
+    public static void enviarCorreo (){
+       Buzon.añadir(correo);
     }
 
 
