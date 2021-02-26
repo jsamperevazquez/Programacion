@@ -2,8 +2,6 @@ package boletin18;
 
 import libreriaAngel.ValidarDatos;
 
-import javax.swing.*;
-
 /**
  * Creado por @autor: angel
  * El  25 de feb. de 2021.
@@ -18,21 +16,26 @@ public class Boletin18 {
                     "1---Crear y enviar correo\n" +
                     "2---Recoger correos en buzón\n"+
                     "3---Ver numero de correos de bandeja\n" +
+                    "4---Ver primer correo sin leer\n" +
                     "4---salir");
             switch (opcion) {
                 case 1:
 
-                    Correo.crearEnviarCorreo();
+                    Correo.crearCorreo();
                     break;
                 case 2:
-                    Buzon.validarCorreo();
+                    Buzon.añadir(Correo.correo);
                     break;
                 case 3:
-                    Buzon.verNumeroCorreos(Buzon.listaCorreos);
+                    Buzon.numeroDeCorreos();
                     break;
                 case 4:
+                    Buzon.mostrarPrimeroNoLeido();
+                    break;
+                case 5:
                     System.exit(0);
             }
-        } while (opcion != 4);
+        } while (opcion != 5);
+
     }
 }

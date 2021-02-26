@@ -1,8 +1,5 @@
 package boletin18;
 
-import libreriaAngel.PedirDatos;
-import libreriaAngel.ValidarDatos;
-
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -14,63 +11,75 @@ import java.util.Iterator;
 public class Buzon {
     static ArrayList<Correo> buzonCorreo = new ArrayList<>();
 
-    public int numeroDeCorreos(){
-        JOptionPane.showMessageDialog(null,"Tinenes " + buzonCorreo.size() +" correos en el buzón");
+    public static int numeroDeCorreos() {
+        JOptionPane.showMessageDialog(null, "Tinenes " + buzonCorreo.size() + " correos en el buzón");
         return buzonCorreo.size();
     }
-    public static void añadir (Correo c){
+
+    public static void añadir(Correo c) {
+        c=Correo.correo;
         buzonCorreo.add(c);
     }
 
-    public static void leerCorreo(ArrayList<Correo> lista){
-        Iterator it =buzonCorreo.iterator();
+    public static void leerCorreo(ArrayList<Correo> lista) {
+        Iterator it = buzonCorreo.iterator();
         Correo correo;
-        while (it.hasNext()){
-            correo=(Correo) it.next();
+        while (it.hasNext()) {
+            correo = (Correo) it.next();
             System.out.println(correo);
             correo.setLeido(true);
         }
     }
 
-    public static boolean porLeer(){
+    public static boolean porLeer() {
         Iterator it = buzonCorreo.iterator();
-        int correoNoLeido=0;
+        int correoNoLeido = 0;
         Correo correo;
-        while (it.hasNext()){
-            correo=(Correo)it.next();
-            if (correo.getLeido()==false){
-                correoNoLeido ++;
+        while (it.hasNext()) {
+            correo = (Correo) it.next();
+            if (correo.getLeido() == false) {
+                correoNoLeido++;
             }
-            JOptionPane.showMessageDialog(null,"Hay " + correoNoLeido + " correos no leídos");
+            JOptionPane.showMessageDialog(null, "Hay " + correoNoLeido + " correos no leídos");
         }
         if (correoNoLeido != 0)
             return false;
         else
             return true;
     }
-    public static String mostrarPrimeroNoLeido(){
+
+    public static String mostrarPrimeroNoLeido() {
         Iterator it = buzonCorreo.iterator();
-        int noLeido=0;
+        int noLeido = 0;
         Correo primerCorreoSinLeer = (Correo) it.next();
-        while (it.hasNext()){
-            if (primerCorreoSinLeer.getLeido()==false) {
-                JOptionPane.showMessageDialog(null,primerCorreoSinLeer);
+        while (it.hasNext()) {
+            if (primerCorreoSinLeer.getLeido() == false) {
+                JOptionPane.showMessageDialog(null, primerCorreoSinLeer);
                 break;
-            }else
-                JOptionPane.showMessageDialog(null,"No hay correos sin leer");
+            } else
+                JOptionPane.showMessageDialog(null, "No hay correos sin leer");
         }
         return primerCorreoSinLeer.getContenidoCorreo();
     }
-    public static String mostrar(int k){
-        for (int i = 0; i <buzonCorreo.size() ; i++) {
+
+    public static String mostrar(int k) {
+        int i;
+        int comprobar = 0;
+        for (i = 0; i < buzonCorreo.size(); i++) {
             if (i == k) {
                 System.out.println(buzonCorreo.get(k));
-                return buzonCorreo.get(k).getContenidoCorreo();
+                comprobar = 1;
             }
-            
-            else
-                return "No existe dicho correo ";
         }
+        if (comprobar == 1)
+            return buzonCorreo.get(k).getContenidoCorreo();
+        else
+            return "No existe dicho correo ";
+
     }
 
+    @Override
+    public String toString() {
+        return "Buzon{}";
+    }
 }

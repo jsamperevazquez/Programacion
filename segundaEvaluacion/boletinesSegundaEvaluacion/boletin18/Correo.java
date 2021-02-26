@@ -48,14 +48,12 @@ public class Correo {
     }
 
 
-    public static void crearEnviarCorreo(){
+    public static void crearCorreo(){
         emisor= PedirDatos.pedirString("Introduce el emisor del correo");
         contenidoCorreo=PedirDatos.pedirString("Introduce el cuerpo del correo");
         correo=new Correo(contenidoCorreo,emisor,leido);
-        Buzon.añadirCorreo(correo);
-        JOptionPane.showMessageDialog(null,"Correo enviado con éxito");
+        JOptionPane.showMessageDialog(null,"Correo creado con éxito");
     }
-
 
 
     @Override
