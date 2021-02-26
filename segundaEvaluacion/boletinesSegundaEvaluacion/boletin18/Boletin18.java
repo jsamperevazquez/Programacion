@@ -15,9 +15,10 @@ public class Boletin18 {
                     "1---Crear correo\n" +
                     "2---Recoger correos en buzón\n" +
                     "3---Ver numero de correos de bandeja\n" +
-                    "4---Ver primer correo sin leer\n" +
-                    "5---Elimina correo no deseado\n" +
-                    "6---salir");
+                    "4---Comprobar si hay correos sin leer\n" +
+                    "5---Ver primer correo sin leer\n" +
+                    "7---Elimina correo no deseado\n" +
+                    "7---salir");
             switch (opcion) {
                 case 1:
                     Correo.crearCorreo();
@@ -29,15 +30,20 @@ public class Boletin18 {
                     Buzon.numeroDeCorreos();
                     break;
                 case 4:
-                    Buzon.mostrarPrimeroNoLeido();
+                    boolean comprobarSinLeer;
+                    comprobarSinLeer=Buzon.porLeer();
                     break;
                 case 5:
+                    String recoger;
+                    recoger=Buzon.mostrarPrimeroNoLeido();
+                    break;
+                case 6:
                     int correoEliminar = ValidarDatos.validarIntMenorQueCero("Numero de correo a eliminar");
                     Buzon.elimina(correoEliminar);
-                case 6:
+                case 7:
                     System.exit(0);
             }
-        } while (opcion != 6);
+        } while (opcion != 7);
 
     }
 }

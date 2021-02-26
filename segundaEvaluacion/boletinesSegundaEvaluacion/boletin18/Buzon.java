@@ -40,8 +40,9 @@ public class Buzon {
             if (correo.getLeido() == false) {
                 correoNoLeido++;
             }
-            JOptionPane.showMessageDialog(null, "Hay " + correoNoLeido + " correos no leídos");
+
         }
+        JOptionPane.showMessageDialog(null, "Hay " + correoNoLeido + " correos no leídos");
         if (correoNoLeido != 0)
             return false;
         else
@@ -54,29 +55,19 @@ public class Buzon {
         Correo primerCorreoSinLeer = (Correo) it.next();
         while (it.hasNext()) {
             if (primerCorreoSinLeer.getLeido() == false) {
+                primerCorreoSinLeer.setLeido(true);
+                noLeido=1;
                 JOptionPane.showMessageDialog(null, primerCorreoSinLeer);
                 break;
-            } else
+            }
+            if (noLeido==0)
                 JOptionPane.showMessageDialog(null, "No hay correos sin leer");
         }
         return primerCorreoSinLeer.getContenidoCorreo();
     }
 
-    public static String mostrar(int k) {
-        int i;
-        int comprobar = 0;
-        for (i = 0; i < buzonCorreo.size(); i++) {
-            if (i == k) {
-                System.out.println(buzonCorreo.get(k));
-                comprobar = 1;
-            }
-        }
-        if (comprobar == 1)
-            return buzonCorreo.get(k).getContenidoCorreo();
-        else
-            return "No existe dicho correo ";
 
-    }
+
     public static void elimina(int k) {
         int i;
         int comprobar = 0;
