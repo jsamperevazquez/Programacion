@@ -50,19 +50,22 @@ public class Buzon {
     }
 
     public static String mostrarPrimeroNoLeido() {
+        Correo primerCorreoSinLeer=new Correo();
         Iterator it = buzonCorreo.iterator();
         int noLeido = 0;
-        Correo primerCorreoSinLeer = (Correo) it.next();
+
         while (it.hasNext()) {
+            primerCorreoSinLeer = (Correo) it.next();
             if (primerCorreoSinLeer.getLeido() == false) {
                 primerCorreoSinLeer.setLeido(true);
                 noLeido=1;
                 JOptionPane.showMessageDialog(null, primerCorreoSinLeer);
                 break;
             }
-            if (noLeido==0)
-                JOptionPane.showMessageDialog(null, "No hay correos sin leer");
+
         }
+        if (noLeido==0)
+            JOptionPane.showMessageDialog(null, "No hay correos sin leer");
         return primerCorreoSinLeer.getContenidoCorreo();
     }
 
