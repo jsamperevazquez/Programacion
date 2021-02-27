@@ -7,8 +7,18 @@ import libreriaAngel.ValidarDatos;
  * El  25 de feb. de 2021.
  **/
 public class Boletin18 {
+    /**
+     *
+     * @param args Metodo principal
+     */
     public static void main(String[] args) {
+        /**
+         * Variable para el control de la opción del swith case
+         */
         int opcion;
+        /**
+         * Menú para elegir las diferentes opciones con los correos electrónicos
+         */
         do {
             opcion = ValidarDatos.validarIntMenorQueCero("****  MENÚ  *****\n" +
                     "Elige una opción: \n" +
