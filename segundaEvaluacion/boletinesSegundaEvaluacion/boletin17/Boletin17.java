@@ -8,10 +8,23 @@ import javax.swing.*;
  * Creado por @autor: angel
  * El  23 de feb. de 2021.
  **/
+
+/**
+ * Clase con metodo principal
+ */
 public class Boletin17 {
     public static void main(String[] args) {
+        /**
+         * Array con los botones del menú de opciones de JOption
+         */
         String[] botones = {"Añadir libro", "Vender Libro", "Mostrar Stock", "Buscar Libro", "Salir"};
+        /**
+         * Para escoger la opción en el menú
+          */
         int opcion;
+        /**
+         * Bucle para escoger entre las diferentes opciones del menú
+         */
         do {
             opcion = JOptionPane.showOptionDialog(null, "Selecciona opción", "Libreria Sampere", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, botones, botones[0]);
 

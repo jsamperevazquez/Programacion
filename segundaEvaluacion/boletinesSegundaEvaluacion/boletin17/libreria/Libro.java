@@ -4,14 +4,45 @@ package boletin17.libreria;
  * Creado por @autor: angel
  * El  23 de feb. de 2021.
  **/
+
+/**
+ * Clase para instanciar objetos de tipo libro
+ */
 public class Libro {
-    private String titulo, autor, ISBN;
+    /**
+     * Título del libro
+     */
+    private String titulo;
+    /**
+     * Autor del libro
+     */
+    private String autor;
+    /**
+     * ISBN del conjunto de libros
+     */
+    private String ISBN;
+    /**
+     * Precio del libro
+     */
     private float precio;
+    /**
+     * Número de unidades de cada libro
+     */
     private int numeroUnidades;
 
+    /**
+     * Constructor por defecto
+     */
     public Libro() {
     }
 
+    /**
+     * Constructor parametrizado
+     * @param titulo titulo del libro
+     * @param autor autor del libro
+     * @param precio precio del libro
+     * @param numeroUnidades número de unidades del libro
+     */
     public Libro(String titulo, String autor, float precio, int numeroUnidades) {
         this.titulo = titulo;
         this.autor = autor;
@@ -57,6 +88,10 @@ public class Libro {
         this.numeroUnidades = numeroUnidades;
     }
 
+    /**
+     * Método toStrin
+     * @return String
+     */
     @Override
     public String toString() {
         return

@@ -10,15 +10,29 @@ import java.util.*;
  * Creado por @autor: angel
  * El  23 de feb. de 2021.
  **/
+
+/**
+ * Clase para instanciar objetos de tipo libro
+ */
 public class Libreria {
 
+    /**
+     * Array para recoger los libros de la librería
+     */
     public static ArrayList<Libro> listaLibros = new ArrayList<>();
 
+    /**
+     * Método para añadir libros a nuestra librería
+     */
     public static void añadirLibros() {
         Libro libroAñadir = pedirLibro();
         listaLibros.add(libroAñadir);
     }
 
+    /**
+     * Método para vender libros y escoger la opción cuando nos quedamos sin stock
+     * @param listaLibros retorna lista de libros
+     */
     public static void venderLibros(ArrayList listaLibros) {
         if (listaLibros == null || listaLibros.isEmpty()) {
             throw new RuntimeException("La lista esta vacía");
@@ -65,13 +79,18 @@ public class Libreria {
         }
     }
 
+    /**
+     * Método para mostrar los libros que tenemos en la librería con excepción si está la librería vacía
+     * Los ordena alfabéticamente en función de su título
+     * @param listaLibros devuelve la lista de libros
+     */
     public static void mostrarLibros(ArrayList listaLibros) {
         if (listaLibros == null || listaLibros.isEmpty()) {
             throw new RuntimeException("La lista esta vacía");
 
         } else {
             Libro lib;
-            Collections.sort(listaLibros, new LibroComparator());
+            Collections.sort(listaLibros, new LibroComparator()); // Ordena la lista de libros creando un nuevo LibroComparator
             Iterator it = listaLibros.iterator();
             System.out.println("Libros en nuestra librería: \n");
             while (it.hasNext()) {
@@ -81,11 +100,20 @@ public class Libreria {
         }
     }
 
+    /**
+     * Método que comprueba el número de unidades de cada libro que tenemos
+     * @param libro recobe como parámetro objeto de tipo libro
+     * @return retorna las unidades que existen
+     */
     public static int comprobarUnidades(Libro libro) {
         int unidades = libro.getNumeroUnidades();
         return unidades;
     }
 
+    /**
+     * Método para buscar un libro determinado
+     * @param listaLibros recibe como parámetro los libros de la librería (si está vacía salta excepción)
+     */
     public static void buscarLibro(ArrayList listaLibros) {
         if (listaLibros == null || listaLibros.isEmpty()) {
             throw new RuntimeException("La lista esta vacía");
@@ -107,6 +135,10 @@ public class Libreria {
         }
     }
 
+    /**
+     * Método para pedir libros en caso de quedarnos sin el mismo
+     * @return retorna dicho libro
+     */
     public static Libro pedirLibro() {
         String titulo = PedirDatos.pedirString("Titulo del libro a añadir");
         String autor = PedirDatos.pedirString("Autor del libro");
