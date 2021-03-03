@@ -1,8 +1,11 @@
 package ejemploFicheros.lecturaFicheros;
 
+import ejemploFicheros.Alumno;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -88,5 +91,30 @@ public class Lectura {
             sc.close();
         }
         return lista;
+    }
+    public static void leerAlumnado(String nombreFichero){
+        File archivo;
+        Scanner sc=null;
+        String linea;
+        List<Alumno> lista = new ArrayList<>(); //Es un arrayList que extiende de List
+        archivo = new File(nombreFichero+".txt"); //le damos el nombre de fichero más la extensión así ya no se lo tenemos que meter.
+        try {
+            sc=new Scanner(archivo).useDelimiter(",");
+            while (sc.hasNextLine()){
+                linea=sc.nextLine();
+                String [] listaPersonas=linea.split(","); //Usamos split para cortar texto por el caracter que le pasemos
+                Alumno alumno = new Alumno(listaPersonas[0],Integer.parseInt(listaPersonas[1]),listaPersonas[2]);
+                lista.add(alumno);
+
+
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Error de lectura"+ e.toString());
+        }finally {
+            sc.close();
+        }
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.println(lista.get(i));
+        }
     }
 }
