@@ -46,9 +46,9 @@ public class Alumno  {
     @Override
     public String toString() {
         return
-                "nombreAlumno='" + nombreAlumno +
-                " notaAlumno=" + notaAlumno +
-                " dni='" + dni ;
+                nombreAlumno +
+                +notaAlumno +
+                dni ;
     }
 
 }

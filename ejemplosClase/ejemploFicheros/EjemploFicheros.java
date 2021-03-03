@@ -3,6 +3,9 @@ package ejemploFicheros;
 import ejemploFicheros.escrituraFicheros.Escritura;
 import ejemploFicheros.lecturaFicheros.Lectura;
 import jdk.nashorn.internal.scripts.JO;
+import libreriaAngel.LeerDatos;
+import libreriaAngel.PedirDatos;
+import libreriaAngel.ValidarDatos;
 
 import javax.swing.*;
 import java.io.File;
@@ -38,13 +41,18 @@ public class EjemploFicheros {
         // Escribir números
        // Escritura.escribirNumeros("C:\\Users\\angel\\OneDrive\\Escritorio\\numeroEscritura"); // como ya le ponemos la extensión en el método ya no es necesario mandarlo
 
-        String nombreFichero= JOptionPane.showInputDialog(null,"Nombre del fichero sin .txt");
+      /*  String nombreFichero= JOptionPane.showInputDialog(null,"Nombre del fichero sin .txt");
         ArrayList<Integer> lista= new ArrayList<>();
         lista.add(19);
         lista.add(22);
         lista.add(36);
         File file= Escritura.escribirFrases(nombreFichero,lista);
-
-
+*/
+        ArrayList<Alumno> listaAlumno = new ArrayList<>();
+        Alumno alumno1 = new Alumno (PedirDatos.pedirString("nombre"),PedirDatos.pedirInt("nota"),PedirDatos.pedirString("dni"));
+        listaAlumno.add(alumno1);
+  listaAlumno.add(new Alumno(PedirDatos.pedirString("nombre"),PedirDatos.pedirInt("nota"), PedirDatos.pedirString("dni")));
+  listaAlumno.add(new Alumno(PedirDatos.pedirString("nombre"),PedirDatos.pedirInt("nota"),PedirDatos.pedirString("dni")));
+  File f = Escritura.escribirObjetos("datos",listaAlumno);
     }
 }

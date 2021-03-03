@@ -1,5 +1,8 @@
 package ejemploFicheros.escrituraFicheros;
 
+import ejemploFicheros.Alumno;
+
+import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -42,5 +45,21 @@ public class Escritura {
             escribir.close();
         }
         return archivo;
+    }
+    public static File escribirObjetos (String nombreFichero, ArrayList<Alumno> lista){
+        PrintWriter f=null;
+        File fichero;
+        fichero=new File(nombreFichero+".txt");
+        try {
+        f=new PrintWriter(fichero);
+            for (Alumno persona:lista)
+            f.println(persona); // Escribe como está en el toString()
+        } catch (FileNotFoundException e) {
+            System.out.println("Error en la escritura"+ e.toString());
+        }finally {
+            f.close();
+        }
+        return fichero;
+
     }
 }
