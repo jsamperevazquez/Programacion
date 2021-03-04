@@ -1,12 +1,13 @@
 package ejemploFicheros.escrituraFicheros;
 
 import ejemploFicheros.Alumno;
+import libreriaAngel.PedirDatos;
 
 import javax.swing.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 /**
  * Creado por @autor: angel
@@ -61,5 +62,20 @@ public class Escritura {
         }
         return fichero;
 
+    }
+    public static void añadir (String nombreFichero){
+        PrintWriter f=null;
+        File fichero;
+        try {
+            FileWriter añadir= new FileWriter(new File(nombreFichero+".txt"),true); // true para añadir al final de fichero
+            f= new PrintWriter(añadir);
+            Alumno alumno = new Alumno(PedirDatos.pedirString("nombre"),PedirDatos.pedirInt("nota"),PedirDatos.pedirString("dni"));
+            f.println(alumno); // Va a escribir como esté toString().
+        }catch (IOException e){
+            System.out.println("Error en la escritura"+ e.toString());
+
+        }finally {
+            f.close();
+        }
     }
 }

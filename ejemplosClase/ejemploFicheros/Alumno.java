@@ -44,10 +44,10 @@ public class Alumno  {
     }
 
     @Override
-    public String toString() {
+    public String toString() { //El toString() tiene que estar bien limpio porque es como nos va a meter los datos en el fichero
         return
-                nombreAlumno +
-                +notaAlumno +
+                nombreAlumno +","
+                +notaAlumno +","+
                 dni ;
     }
 

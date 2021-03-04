@@ -30,16 +30,16 @@ public class EjemploFicheros {
         //File f = new File("C:\\Users\\angel\\OneDrive\\Escritorio\\Numeros.txt"); // Creamos un nuevo objeto de tipo fichero.
         //ArrayList<Integer> lista = Lectura.leerEnteros(f); //Creamos un nuevo ArrayList para recoger lo que retorna el método.
         //for (Integer ele:lista){ // Visualizamos con un for each
-          //  System.out.println(ele);
+        //  System.out.println(ele);
         //}
 
         // Leemos objetos y los metemos en una colección
         // Lectura.leerAlumnado("C:\\Users\\angel\\OneDrive\\Escritorio\\Alumnos");
 
 
-       // Método de escritura
+        // Método de escritura
         // Escribir números
-       // Escritura.escribirNumeros("C:\\Users\\angel\\OneDrive\\Escritorio\\numeroEscritura"); // como ya le ponemos la extensión en el método ya no es necesario mandarlo
+        // Escritura.escribirNumeros("C:\\Users\\angel\\OneDrive\\Escritorio\\numeroEscritura"); // como ya le ponemos la extensión en el método ya no es necesario mandarlo
 
       /*  String nombreFichero= JOptionPane.showInputDialog(null,"Nombre del fichero sin .txt");
         ArrayList<Integer> lista= new ArrayList<>();
@@ -48,11 +48,16 @@ public class EjemploFicheros {
         lista.add(36);
         File file= Escritura.escribirFrases(nombreFichero,lista);
 */
+/*
         ArrayList<Alumno> listaAlumno = new ArrayList<>();
-        Alumno alumno1 = new Alumno (PedirDatos.pedirString("nombre"),PedirDatos.pedirInt("nota"),PedirDatos.pedirString("dni"));
+        Alumno alumno1 = new Alumno(PedirDatos.pedirString("nombre"), PedirDatos.pedirInt("nota"), PedirDatos.pedirString("dni"));
         listaAlumno.add(alumno1);
-  listaAlumno.add(new Alumno(PedirDatos.pedirString("nombre"),PedirDatos.pedirInt("nota"), PedirDatos.pedirString("dni")));
-  listaAlumno.add(new Alumno(PedirDatos.pedirString("nombre"),PedirDatos.pedirInt("nota"),PedirDatos.pedirString("dni")));
-  File f = Escritura.escribirObjetos("datos",listaAlumno);
+        listaAlumno.add(new Alumno(PedirDatos.pedirString("nombre"), PedirDatos.pedirInt("nota"), PedirDatos.pedirString("dni")));
+        listaAlumno.add(new Alumno(PedirDatos.pedirString("nombre"), PedirDatos.pedirInt("nota"), PedirDatos.pedirString("dni")));
+        File f = Escritura.escribirObjetos("datos", listaAlumno);
+        Lectura.leerAlumnado("datos");
+        Escritura.añadir("datos");
+  */
+        Lectura.leerAlumnado("datos");
     }
 }
