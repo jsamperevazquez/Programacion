@@ -2,6 +2,7 @@ package ejemploFicheros;
 
 import ejemploFicheros.escrituraFicheros.Escritura;
 import ejemploFicheros.lecturaFicheros.Lectura;
+import ejemploFicheros.serializacion.LecturaEscrituraSerializable;
 import jdk.nashorn.internal.scripts.JO;
 import libreriaAngel.LeerDatos;
 import libreriaAngel.PedirDatos;
@@ -13,7 +14,8 @@ import java.util.ArrayList;
 
 /**
  * Creado por @autor: angel
- * El  25 de feb. de 2021.
+ * El  03 de mar. de 2021.
+ * //-encoding utf8 -docencoding utf8 -charset utf8(Para el javadoc)
  **/
 public class EjemploFicheros {
     public static void main(String[] args) {
@@ -58,6 +60,9 @@ public class EjemploFicheros {
         Lectura.leerAlumnado("datos");
         Escritura.añadir("datos");
   */
-        Lectura.leerAlumnado("datos");
+       // Lectura.leerAlumnado("datos");
+
+        LecturaEscrituraSerializable.escribirSerializable("alumnoSer");
+        LecturaEscrituraSerializable.lecturaSerializable("alumnoSer");
     }
 }

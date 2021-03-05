@@ -1,10 +1,13 @@
 package ejemploFicheros;
 
+import java.io.Serializable;
+
 /**
  * Creado por @autor: angel
- * El  23 de feb. de 2021.
+ * El  03 de mar. de 2021.
+ * //-encoding utf8 -docencoding utf8 -charset utf8(Para el javadoc)
  **/
-public class Alumno  {
+public class Alumno implements Serializable { //siempre hay que implementar serializable para transformar a bytes
 
     private String nombreAlumno;
     private int notaAlumno;
