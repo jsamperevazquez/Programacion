@@ -19,11 +19,11 @@ public class Boletin21 extends JFrame {
     private JComboBox comboBox1;
     private JTextField textField4;
     private JComboBox comboBox2;
-    private JTextField textField5;
-    private JTextField textField6;
     private JButton OKButton;
     private JButton cancelButton;
     private JLabel createNueUser;
+    private JPasswordField passwordField1;
+    private JPasswordField passwordField2;
 
 
     public static void main(String[] args) {
@@ -32,9 +32,5 @@ public class Boletin21 extends JFrame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-        frame.setLocationRelativeTo(null);
-
-
     }
-
 }
