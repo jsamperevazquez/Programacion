@@ -1,5 +1,7 @@
 package com.angel.boletin21;
 
+import com.toedter.calendar.JCalendar;
+
 import javax.swing.*;
 import java.awt.event.KeyEvent;
 
@@ -24,6 +26,8 @@ public class Boletin21 extends JFrame {
     private JLabel createNueUser;
     private JPasswordField passwordField1;
     private JPasswordField passwordField2;
+    private JCalendar cal;
+    private JButton buscarFechaButton;
 
 
     public static void main(String[] args) {
@@ -33,4 +37,12 @@ public class Boletin21 extends JFrame {
         frame.pack();
         frame.setVisible(true);
     }
+
+    private void createUIComponents() {
+        cal= new JCalendar(); //Creo yo el objeto porque marco la casilla en el form de
+
+
+
+    }
+
 }
