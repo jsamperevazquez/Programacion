@@ -23,7 +23,6 @@
     <rowspec value="top:4dlu:noGrow"/>
     <rowspec value="center:max(d;4px):noGrow"/>
     <colspec value="fill:463px:grow"/>
-    <colspec value="left:62dlu:noGrow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
     <colspec value="left:50dlu:noGrow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
@@ -45,213 +44,17 @@
     <colspec value="fill:max(d;4px):noGrow"/>
     <colspec value="left:4dlu:noGrow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:43dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:5dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:6dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:4dlu:noGrow"/>
-    <colspec value="fill:d:grow"/>
     <constraints>
-      <xy x="20" y="33" width="2098" height="640"/>
+      <xy x="20" y="15" width="1497" height="513"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
       <component id="fe904" class="javax.swing.JLabel" binding="createNueUser">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="221" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="24" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>
@@ -273,7 +76,7 @@
       </component>
       <component id="3dd99" class="javax.swing.JTextField" binding="nueUserText">
         <constraints>
-          <grid row="2" column="2" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="2" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
@@ -282,7 +85,7 @@
       </component>
       <component id="641c0" class="javax.swing.JTextField" binding="fullNameText">
         <constraints>
-          <grid row="4" column="2" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="4" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
@@ -300,7 +103,7 @@
       </component>
       <component id="4ef88" class="javax.swing.JLabel">
         <constraints>
-          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>
@@ -309,7 +112,7 @@
       </component>
       <component id="fc70a" class="javax.swing.JTextField" binding="textField3" default-binding="true">
         <constraints>
-          <grid row="6" column="2" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="6" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
@@ -327,7 +130,7 @@
       </component>
       <component id="84cff" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
         <constraints>
-          <grid row="8" column="2" row-span="1" col-span="16" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>
@@ -347,7 +150,7 @@
       </component>
       <component id="e8f47" class="javax.swing.JTextField" binding="textField4" default-binding="true">
         <constraints>
-          <grid row="10" column="2" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="10" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
@@ -365,7 +168,7 @@
       </component>
       <component id="dd10f" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
         <constraints>
-          <grid row="12" column="2" row-span="1" col-span="16" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="12" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>
@@ -394,7 +197,7 @@
       </component>
       <component id="18350" class="javax.swing.JPasswordField" binding="passwordField1" default-binding="true">
         <constraints>
-          <grid row="14" column="2" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="14" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
@@ -403,7 +206,7 @@
       </component>
       <component id="4623f" class="javax.swing.JPasswordField" binding="passwordField2" default-binding="true">
         <constraints>
-          <grid row="16" column="2" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="16" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
@@ -415,10 +218,11 @@
           <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
           <forms defaultalign-horz="false"/>
         </constraints>
+        <properties/>
       </component>
       <component id="3e1d" class="javax.swing.JButton" binding="cancelButton" default-binding="true">
         <constraints>
-          <grid row="18" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="18" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
           <forms defaultalign-horz="false" defaultalign-vert="false"/>
         </constraints>
         <properties>
@@ -427,7 +231,7 @@
       </component>
       <component id="20c4e" class="javax.swing.JButton" binding="OKButton" default-binding="true">
         <constraints>
-          <grid row="18" column="7" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="18" column="6" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
           <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
@@ -436,7 +240,7 @@
       </component>
       <component id="53844" class="javax.swing.JButton" binding="buscarFechaButton" default-binding="true">
         <constraints>
-          <grid row="20" column="3" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="20" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>

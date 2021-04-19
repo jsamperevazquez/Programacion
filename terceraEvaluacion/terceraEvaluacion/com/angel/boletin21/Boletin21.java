@@ -29,7 +29,6 @@ public class Boletin21 extends JFrame {
     private JCalendar cal;
     private JButton buscarFechaButton;
 
-
     public static void main(String[] args) {
         JFrame frame = new JFrame("Boletin21");
         frame.setContentPane(new Boletin21().panel);
