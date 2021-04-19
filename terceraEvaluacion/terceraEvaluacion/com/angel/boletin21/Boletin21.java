@@ -28,6 +28,13 @@ public class Boletin21 extends JFrame {
     private JPasswordField passwordField2;
     private JCalendar cal;
     private JButton buscarFechaButton;
+    private JLabel fullNameLabel;
+    private JLabel userIDLabel;
+    private JLabel groupLabel;
+    private JLabel homeDirectoryLabel;
+    private JLabel loginShellLabel;
+    private JLabel passwordLabel;
+    private JLabel confirmLabel;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Boletin21");
@@ -39,6 +46,25 @@ public class Boletin21 extends JFrame {
 
     private void createUIComponents() {
         cal= new JCalendar(); //Creo yo el objeto porque marco la casilla en el form de
+        userNameLabel = new JLabel();
+        userNameLabel.setDisplayedMnemonic(KeyEvent.VK_N);
+        fullNameLabel=new JLabel();
+        fullNameLabel.setDisplayedMnemonic(KeyEvent.VK_F);
+        userIDLabel=new JLabel();
+        userIDLabel.setDisplayedMnemonic(KeyEvent.VK_U);
+        groupLabel=new JLabel();
+        groupLabel.setDisplayedMnemonic(KeyEvent.VK_G);
+        homeDirectoryLabel=new JLabel();
+        homeDirectoryLabel.setDisplayedMnemonic(KeyEvent.VK_H);
+        loginShellLabel=new JLabel();
+        loginShellLabel.setDisplayedMnemonic(KeyEvent.VK_S);
+        passwordLabel=new JLabel();
+        passwordLabel.setDisplayedMnemonic(KeyEvent.VK_P);
+        confirmLabel=new JLabel();
+        confirmLabel.setDisplayedMnemonic(KeyEvent.VK_O);
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.angel.boletin21.Boletin21">
   <grid id="27dc6" binding="panel" layout-manager="FormLayout">
-    <rowspec value="center:d:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
     <rowspec value="top:4dlu:noGrow"/>
     <rowspec value="center:31px:noGrow"/>
     <rowspec value="top:4dlu:noGrow"/>
@@ -22,15 +22,10 @@
     <rowspec value="center:max(d;4px):noGrow"/>
     <rowspec value="top:4dlu:noGrow"/>
     <rowspec value="center:max(d;4px):noGrow"/>
-    <colspec value="fill:463px:grow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:50dlu:noGrow"/>
+    <colspec value="fill:1088px:grow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
     <colspec value="left:4dlu:noGrow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:49dlu:noGrow"/>
-    <colspec value="fill:max(d;4px):noGrow"/>
-    <colspec value="left:17dlu:noGrow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
     <colspec value="left:4dlu:noGrow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
@@ -44,27 +39,36 @@
     <colspec value="fill:max(d;4px):noGrow"/>
     <colspec value="left:4dlu:noGrow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="left:143dlu:noGrow"/>
+    <colspec value="fill:146px:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:5dlu:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:5dlu:noGrow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
     <colspec value="fill:max(d;4px):noGrow"/>
     <constraints>
-      <xy x="20" y="15" width="1497" height="513"/>
+      <xy x="777" y="12" width="1676" height="516"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <component id="fe904" class="javax.swing.JLabel" binding="createNueUser">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="24" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
-        </constraints>
-        <properties>
-          <text value="Create a new user"/>
-        </properties>
-      </component>
-      <component id="f980e" class="javax.swing.JLabel" binding="userNameLabel">
+      <component id="f980e" class="javax.swing.JLabel" binding="userNameLabel" custom-create="true">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
+          <forms top="0" left="600" bottom="0" right="0" defaultalign-horz="false"/>
         </constraints>
         <properties>
           <horizontalAlignment value="2"/>
@@ -76,7 +80,7 @@
       </component>
       <component id="3dd99" class="javax.swing.JTextField" binding="nueUserText">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="2" column="1" row-span="1" col-span="32" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
@@ -85,26 +89,26 @@
       </component>
       <component id="641c0" class="javax.swing.JTextField" binding="fullNameText">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="4" column="1" row-span="1" col-span="32" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
         </constraints>
         <properties/>
       </component>
-      <component id="e427e" class="javax.swing.JLabel">
+      <component id="e427e" class="javax.swing.JLabel" binding="fullNameLabel" custom-create="true">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
+          <forms top="0" left="600" bottom="0" right="0"/>
         </constraints>
         <properties>
           <text value="Full Name:"/>
         </properties>
       </component>
-      <component id="4ef88" class="javax.swing.JLabel">
+      <component id="4ef88" class="javax.swing.JLabel" binding="userIDLabel" custom-create="true">
         <constraints>
           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
+          <forms top="0" left="600" bottom="0" right="0"/>
         </constraints>
         <properties>
           <text value="User ID:"/>
@@ -112,17 +116,17 @@
       </component>
       <component id="fc70a" class="javax.swing.JTextField" binding="textField3" default-binding="true">
         <constraints>
-          <grid row="6" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="6" column="1" row-span="1" col-span="32" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
         </constraints>
         <properties/>
       </component>
-      <component id="d2eee" class="javax.swing.JLabel">
+      <component id="d2eee" class="javax.swing.JLabel" binding="groupLabel" custom-create="true">
         <constraints>
           <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
+          <forms top="0" left="600" bottom="0" right="0"/>
         </constraints>
         <properties>
           <text value="Group:"/>
@@ -130,7 +134,7 @@
       </component>
       <component id="84cff" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
         <constraints>
-          <grid row="8" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="1" row-span="1" col-span="32" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>
@@ -139,10 +143,10 @@
           </model>
         </properties>
       </component>
-      <component id="28756" class="javax.swing.JLabel">
+      <component id="28756" class="javax.swing.JLabel" binding="homeDirectoryLabel" custom-create="true">
         <constraints>
           <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
+          <forms top="0" left="600" bottom="0" right="0"/>
         </constraints>
         <properties>
           <text value="Home Directory:"/>
@@ -150,17 +154,17 @@
       </component>
       <component id="e8f47" class="javax.swing.JTextField" binding="textField4" default-binding="true">
         <constraints>
-          <grid row="10" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="10" column="1" row-span="1" col-span="32" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
         </constraints>
         <properties/>
       </component>
-      <component id="33308" class="javax.swing.JLabel">
+      <component id="33308" class="javax.swing.JLabel" binding="loginShellLabel" custom-create="true">
         <constraints>
           <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
+          <forms top="0" left="600" bottom="0" right="0"/>
         </constraints>
         <properties>
           <text value="Login Shell:"/>
@@ -168,7 +172,7 @@
       </component>
       <component id="dd10f" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
         <constraints>
-          <grid row="12" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="12" column="1" row-span="1" col-span="32" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>
@@ -177,19 +181,19 @@
           </model>
         </properties>
       </component>
-      <component id="bbec9" class="javax.swing.JLabel">
+      <component id="bbec9" class="javax.swing.JLabel" binding="passwordLabel" custom-create="true">
         <constraints>
           <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
+          <forms top="0" left="600" bottom="0" right="0"/>
         </constraints>
         <properties>
           <text value="Password:"/>
         </properties>
       </component>
-      <component id="6f1a4" class="javax.swing.JLabel">
+      <component id="6f1a4" class="javax.swing.JLabel" binding="confirmLabel" custom-create="true">
         <constraints>
           <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
+          <forms top="0" left="600" bottom="0" right="0"/>
         </constraints>
         <properties>
           <text value="Confirm:"/>
@@ -197,7 +201,7 @@
       </component>
       <component id="18350" class="javax.swing.JPasswordField" binding="passwordField1" default-binding="true">
         <constraints>
-          <grid row="14" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="14" column="1" row-span="1" col-span="32" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
@@ -206,7 +210,7 @@
       </component>
       <component id="4623f" class="javax.swing.JPasswordField" binding="passwordField2" default-binding="true">
         <constraints>
-          <grid row="16" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="16" column="1" row-span="1" col-span="32" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
@@ -216,22 +220,12 @@
       <component id="9acbc" class="com.toedter.calendar.JCalendar" binding="cal" custom-create="true">
         <constraints>
           <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms defaultalign-horz="false"/>
+          <forms top="0" left="700" bottom="0" right="0" defaultalign-horz="false"/>
         </constraints>
-        <properties/>
-      </component>
-      <component id="3e1d" class="javax.swing.JButton" binding="cancelButton" default-binding="true">
-        <constraints>
-          <grid row="18" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
-          <forms defaultalign-horz="false" defaultalign-vert="false"/>
-        </constraints>
-        <properties>
-          <text value="Cancel"/>
-        </properties>
       </component>
       <component id="20c4e" class="javax.swing.JButton" binding="OKButton" default-binding="true">
         <constraints>
-          <grid row="18" column="6" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="18" column="25" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
           <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
@@ -240,11 +234,29 @@
       </component>
       <component id="53844" class="javax.swing.JButton" binding="buscarFechaButton" default-binding="true">
         <constraints>
-          <grid row="20" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="20" column="20" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>
           <text value="Buscar Fecha"/>
+        </properties>
+      </component>
+      <component id="fe904" class="javax.swing.JLabel" binding="createNueUser">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="37" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+          <forms top="0" left="600" bottom="0" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="Create a new user"/>
+        </properties>
+      </component>
+      <component id="3e1d" class="javax.swing.JButton" binding="cancelButton" default-binding="true">
+        <constraints>
+          <grid row="18" column="20" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms top="0" left="250" bottom="0" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="Cancel"/>
         </properties>
       </component>
     </children>
