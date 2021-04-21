@@ -24,17 +24,18 @@ public class Boletin22 extends JFrame {
     private JButton agregarTablaButton;
     private JTable tablaCurso;
     private DefaultTableModel modelo;
+
     private void createUIComponents() {
         JScrollPane scrollPane = new JScrollPane(); // Creo un JScrollPane para poder agregar el Jtable al form y poder usar desplazamiento vertical y horizontal
         tablaCurso = new JTable(); // instancio la tabla con las filas y columnas que hemos creado con anterioridad.
         tablaCurso.setVisible(true);
         // Template para la tabla
-        modelo=new DefaultTableModel(); // Creo un nuevo template para diseñar la tabla
+        modelo = new DefaultTableModel(); // Creo un nuevo template para diseñar la tabla
         // Añado las columnas
         modelo.addColumn("columnaNombre");
         modelo.addColumn("columnaApellido");
         modelo.addColumn("columnaCurso");
-        modelo.addRow(new Object[]{"Nombre","Apellido","Curso"}); // Añado la fila con los valores del array Object
+        modelo.addRow(new Object[]{"Nombre", "Apellido", "Curso"}); // Añado la fila con los valores del array Object
 
         tablaCurso.setModel(modelo); // Asigno el template a la JTable
         scrollPane.setViewportView(tablaCurso); // meto la tabla dentro del contenedor
@@ -49,7 +50,7 @@ public class Boletin22 extends JFrame {
         agregarTablaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                modelo.addRow(new Object[]{nombreField.getText(),apellidoField.getText(),comboAsig.getSelectedItem().toString()});
+                modelo.addRow(new Object[]{nombreField.getText(), apellidoField.getText(), comboAsig.getSelectedItem().toString()});
             }
         });
     }
@@ -71,14 +72,15 @@ public class Boletin22 extends JFrame {
                                                        int row,
                                                        int column) {
             String nombreCelda = (String) table.getValueAt(row, 0); // Casteo a String y obtengo valores de la tabla para poder comparar
-            if (nombreCelda.equalsIgnoreCase("nombre")) { // pongo el color gris de la fila si tiene como valor "nombre"
+            if (nombreCelda.equalsIgnoreCase("nombre") && modelo.getRowCount()<2) { // pongo el color gris de la fila si tiene como valor "nombre"
                 setBackground(Color.LIGHT_GRAY);
                 setForeground(Color.BLACK);
                 setHorizontalAlignment(SwingConstants.CENTER); // A las siguientes filas las pongo en blanco
-            }else if (!nombreCelda.equalsIgnoreCase("nombre"))
+            } else {
                 setBackground(Color.WHITE);
-            setForeground(Color.BLACK);
-            setHorizontalAlignment(SwingConstants.CENTER);
+                setForeground(Color.BLACK);
+                setHorizontalAlignment(SwingConstants.CENTER);
+            }
             return super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
         }
 
