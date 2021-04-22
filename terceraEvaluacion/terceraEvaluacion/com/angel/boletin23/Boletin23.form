@@ -5,7 +5,9 @@
     <constraints>
       <xy x="20" y="20" width="694" height="430"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-5328461"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="71aea" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
@@ -207,7 +209,7 @@
           </component>
           <component id="129a1" class="javax.swing.JButton" binding="acButton">
             <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false">
                 <preferred-size width="60" height="20"/>
                 <maximum-size width="60" height="20"/>
               </grid>
@@ -221,13 +223,15 @@
           </component>
           <component id="f85f5" class="javax.swing.JButton" binding="offButton">
             <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
                 <maximum-size width="60" height="20"/>
               </grid>
             </constraints>
             <properties>
               <background color="-16764241"/>
               <foreground color="-263937"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
               <text value="OFF"/>
             </properties>
           </component>
