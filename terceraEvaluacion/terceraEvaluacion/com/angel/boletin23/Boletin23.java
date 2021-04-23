@@ -38,7 +38,6 @@ public class Boletin23 {
 
     public Boletin23() {
         primerNumero = true;
-        adelante=false;
         ActionListener escucha = new insertarNumerosPantalla();
         ActionListener operador = new operaciones();
         ponerEscuchaBoton(escucha, a0Button);
@@ -83,7 +82,7 @@ public class Boletin23 {
                 if (texto.length() <= 1 && texto.equals("0")) {
                     // Hay el 0 en el textArea (valor por defecto)
                     textArea1.setText(textArea1.getText().concat("."));
-                    adelante=true;
+                    primerNumero=false;
                 } else {
                     // Ya hay número en el Field
                     if (!validarPunto(textArea1.getText())) {
