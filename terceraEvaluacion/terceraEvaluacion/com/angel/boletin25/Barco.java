@@ -33,7 +33,7 @@ public abstract class Barco {
         return eslora;
 
     }
-
+    // Métodos
     public abstract float calcularPrecioAmarre();
 
     public float precioTotalAlquiler(Barco barco, int diasEstancia){
@@ -53,6 +53,7 @@ public abstract class Barco {
         System.out.println("Importe total : " + precioTotal + " Euros");
     }
 
+    // To String
     @Override
     public String toString() {
         return
