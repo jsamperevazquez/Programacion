@@ -1,14 +1,16 @@
 package com.angel.boletin25;
+import javax.swing.*;
 
 /**
  * Creado por @autor: angel
  * El  28 de abr. de 2021.
  * //-encoding utf8 -docencoding utf8 -charset utf8(Para el javadoc)
  **/
-public class Barco {
+public abstract class Barco {
     private String matricula;
     private int eslora;
-    private float precioAmarre;
+    private static float precioAmarre;
+    private  static float precioTotal;
 
     // Constructor por defecto
     public Barco() {
@@ -21,14 +23,7 @@ public class Barco {
     }
 
 
-    // Setters y Getters
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
-
-    public void setEslora(int eslora) {
-        this.eslora = eslora;
-    }
+    //  Getters
 
     public String getMatricula() {
         return matricula;
@@ -39,18 +34,31 @@ public class Barco {
 
     }
 
-    public void precioTipoBarco(float precioAmarre){
-        this.precioAmarre += precioAmarre;
+    public abstract float calcularPrecioAmarre();
+
+    public float precioTotalAlquiler(Barco barco, int diasEstancia){
+       precioAmarre=barco.calcularPrecioAmarre();
+        precioTotal= diasEstancia*barco.calcularPrecioAmarre();
+       return precioTotal;
     }
 
 
 
+    public void generarFactura(){
+        System.out.println(" *******   FACTURA    *******     \n" +
+
+                "----TIPO BARCO:"
+                + this.toString());
+        System.out.println("Precio de embarcacion por dia: " + precioAmarre + " Euros");
+        System.out.println("Importe total : " + precioTotal + " Euros");
+    }
+
     @Override
     public String toString() {
-        return "       *******   FACTURA    *******     " +
-                "----BARCO----" +
-                "matricula='" + matricula +
-                "eslora=" + eslora +
-                "precioAmarre=" + precioAmarre;
+        return
+                "  matricula=  '" + matricula +
+                "  eslora=  " + eslora +
+                "  precioAmarre=  " + precioAmarre +
+                " precioTotal= " + precioTotal;
     }
 }

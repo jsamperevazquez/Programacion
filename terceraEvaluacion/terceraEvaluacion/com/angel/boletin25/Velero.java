@@ -14,22 +14,24 @@ public class Velero extends Barco {
         super(matricula, eslora);
         this.numeroMastiles = numeroMastiles;
     }
-    // Setters y Getters
-    public void setNumeroMastiles(int numeroMastiles) {
-        this.numeroMastiles = numeroMastiles;
-    }
+    // Getters
+
 
     public int getNumeroMastiles() {
         return numeroMastiles;
     }
 
+    @Override
+    public float calcularPrecioAmarre(){
+        return (10*getEslora()) + (numeroMastiles * 8);
+    }
 
 
     @Override
     public String toString() {
-        return "----Velero----" +
-                super.getMatricula()+
-                super.getEslora() +
-                "numeroMastiles=" + numeroMastiles;
+        return " Velero----  " + "matricula: " +
+                super.getMatricula()+ " eslora: " +
+                super.getEslora() + " metros" +
+                "  numeroMastiles=  " + numeroMastiles;
     }
 }

@@ -15,20 +15,25 @@ public class Deportivas extends Barco{
         this.potenciaCV = potenciaCV;
     }
 
-    // Setters y Getters
+    // Getters
+
+
     public int getPotenciaCV() {
         return potenciaCV;
     }
 
-    public void setPotenciaCV(int potenciaCV) {
-        this.potenciaCV = potenciaCV;
+    @Override
+    public float calcularPrecioAmarre(){
+        return (10*getEslora()) + (potenciaCV * 2);
     }
+
+
 
     @Override
     public String toString() {
-        return "----Deportivas----" +
-                super.getMatricula()+
-                +super.getEslora()+
-                "potenciaCV=" + potenciaCV;
+        return " Deportiva ----  " + "matricula: " +
+                super.getMatricula()+ " eslora: " +
+                super.getEslora() + " metros" +
+                "  potenciaCV=  " + potenciaCV;
     }
 }

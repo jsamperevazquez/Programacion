@@ -6,11 +6,11 @@ package com.angel.boletin25;
  * //-encoding utf8 -docencoding utf8 -charset utf8(Para el javadoc)
  **/
 public class Yate extends Barco{
-    private float potenciaCV;
+    private int  potenciaCV;
     private int numeroCamarotes;
 
     // Constructor
-    public Yate(String matricula, int eslora, float potenciaCV, int numeroCamarotes) {
+    public Yate(String matricula, int eslora, int potenciaCV, int numeroCamarotes) {
         super(matricula, eslora);
         this.potenciaCV = potenciaCV;
         this.numeroCamarotes = numeroCamarotes;
@@ -22,7 +22,7 @@ public class Yate extends Barco{
         return potenciaCV;
     }
 
-    public void setPotenciaCV(float potenciaCV) {
+    public void setPotenciaCV(int potenciaCV) {
         this.potenciaCV = potenciaCV;
     }
 
@@ -34,12 +34,18 @@ public class Yate extends Barco{
         this.numeroCamarotes = numeroCamarotes;
     }
 
+
+    @Override
+    public float calcularPrecioAmarre() {
+        return ((super.getEslora()*10) + 2*potenciaCV + 25*getNumeroCamarotes());
+    }
+
     @Override
     public String toString() {
-        return "----Yate----" +
-                super.getMatricula()+
-                super.getEslora()+
-                "potenciaCV=" + potenciaCV +
-                ", numeroCamarotes=" + numeroCamarotes;
+        return " Yate ----  " + "matricula: " +
+                super.getMatricula()+ " eslora: " +
+                super.getEslora() + " metros" +
+                "  potenciaCV=  " + potenciaCV +
+                " numeroCamarotes=  " + numeroCamarotes;
     }
 }
