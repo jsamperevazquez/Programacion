@@ -5,7 +5,7 @@ package com.angel.boletin26;
  * El  30 de abr. de 2021.
  * //-encoding utf8 -docencoding utf8 -charset utf8(Para el javadoc)
  **/
-public class Seleccionador extends SeleccionFutbol{
+public class Seleccionador extends SeleccionFutbol {
 
 
     // Constructor
@@ -14,8 +14,8 @@ public class Seleccionador extends SeleccionFutbol{
     }
 
     // Método de clase
-    public void seleccionarJugador(){
-        System.out.println("El seleccionador " + super.getNombre()+" " + super.getApellidos()+ " selecciona jugadores");
+    public void seleccionarJugador() {
+        System.out.println("El seleccionador " + super.getNombre() + " " + super.getApellidos() + " selecciona jugadores");
     }
 
     //toString()

@@ -5,11 +5,11 @@ package com.angel.boletin26;
  * El  30 de abr. de 2021.
  * //-encoding utf8 -docencoding utf8 -charset utf8(Para el javadoc)
  **/
-public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol{
-   private Integer id;
-   private String nombre;
-   private String apellidos;
-   private Integer edad;
+public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol {
+    private Integer id;
+    private String nombre;
+    private String apellidos;
+    private Integer edad;
 
     // Constructores
     public SeleccionFutbol() {
@@ -40,7 +40,6 @@ public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol{
     }
 
 
-
     // Métodos implementados de la interface
     @Override
     public void concentrarse() {
@@ -67,8 +66,8 @@ public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol{
     public String toString() {
         return
                 " id= " + id +
-                " nombre= " + nombre +
-                " apellidos= " + apellidos +
-                " edad= " + edad ;
+                        " nombre= " + nombre +
+                        " apellidos= " + apellidos +
+                        " edad= " + edad;
     }
 }

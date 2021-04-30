@@ -13,10 +13,10 @@ public class Boletin26 {
         ArrayList<SeleccionFutbol> listaSeleccion = new ArrayList<>();
 
         //Objetos
-        SeleccionFutbol futbolista1= new Futbolista(1,"Marco","Van Basten",31,9,"delantero");
-        SeleccionFutbol entrenador1=new Entrenador(1,"Johan","Cruif",54,123);
-        SeleccionFutbol masajista1=new Masajista(1,"Juan","Del Bosque",59,"Fisio",29);
-        SeleccionFutbol seleccionador1=new Seleccionador(1,"yo","Mismo",39);
+        SeleccionFutbol futbolista1 = new Futbolista(1, "Marco", "Van Basten", 31, 9, "delantero");
+        SeleccionFutbol entrenador1 = new Entrenador(1, "Johan", "Cruif", 54, 123);
+        SeleccionFutbol masajista1 = new Masajista(1, "Juan", "Del Bosque", 59, "Fisio", 29);
+        SeleccionFutbol seleccionador1 = new Seleccionador(1, "yo", "Mismo", 39);
 
         //Objetos a lista
         listaSeleccion.add(futbolista1);
@@ -25,7 +25,7 @@ public class Boletin26 {
         listaSeleccion.add(seleccionador1);
 
         // Visualizo los objetos
-        for(SeleccionFutbol ele:listaSeleccion){
+        for (SeleccionFutbol ele : listaSeleccion) {
             System.out.println(ele);
         }
 

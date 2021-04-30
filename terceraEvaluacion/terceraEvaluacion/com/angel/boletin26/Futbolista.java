@@ -5,7 +5,7 @@ package com.angel.boletin26;
  * El  30 de abr. de 2021.
  * //-encoding utf8 -docencoding utf8 -charset utf8(Para el javadoc)
  **/
-public class Futbolista extends SeleccionFutbol{
+public class Futbolista extends SeleccionFutbol {
 
     private Integer dorsal;
     private String demarcacion;
@@ -28,26 +28,29 @@ public class Futbolista extends SeleccionFutbol{
 
     // Métodos sobreescritos
     @Override
-    public void concentrarse(){
-        System.out.println("El jugador " + super.getNombre() + " " + super.getApellidos()+ " se concentra");
+    public void concentrarse() {
+        System.out.println("El jugador " + super.getNombre() + " " + super.getApellidos() + " se concentra");
     }
+
     @Override
-    public void viajar(){
-        System.out.println("El jugador "+ super.getNombre() + " " +super.getApellidos() + " viaja");
+    public void viajar() {
+        System.out.println("El jugador " + super.getNombre() + " " + super.getApellidos() + " viaja");
     }
+
     @Override
-    public void entrenar(){
-        System.out.println("El jugador "+ super.getNombre() + " " +super.getApellidos() + " entrena");
+    public void entrenar() {
+        System.out.println("El jugador " + super.getNombre() + " " + super.getApellidos() + " entrena");
     }
+
     @Override
-    public void jugarPartido(){
-        System.out.println("El jugador "+ super.getNombre() + " " +super.getApellidos() + " juega partido");
+    public void jugarPartido() {
+        System.out.println("El jugador " + super.getNombre() + " " + super.getApellidos() + " juega partido");
     }
 
 
     // Métodos de clase
-    public void entrevista(){
-        System.out.println("El jugador "+ super.getNombre() + " " +super.getApellidos() + " esta en una entrevista");
+    public void entrevista() {
+        System.out.println("El jugador " + super.getNombre() + " " + super.getApellidos() + " esta en una entrevista");
     }
 
     // toString de la clase
@@ -55,6 +58,6 @@ public class Futbolista extends SeleccionFutbol{
     public String toString() {
         return " futbolista: " + super.toString() +
                 " dorsal= " + dorsal +
-                " demarcacion= " + demarcacion ;
+                " demarcacion= " + demarcacion;
     }
 }
