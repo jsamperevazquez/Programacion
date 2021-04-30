@@ -25,8 +25,17 @@ public class Masajista extends SeleccionFutbol{
         return anosExperencia;
     }
 
+    // Métodos sobreescritos
+    @Override
+    public void viajar(){
+        System.out.println("El masajista "+ super.getNombre() + "" +super.getApellidos() + " viaja");
+    }
+
+
     // Método de la clase
-    public void darMasaje(){}
+    public void darMasaje(){
+        System.out.println("El masajista "+ super.getNombre() + "" +super.getApellidos() + " esta dando masajes");
+    }
 
     @Override
     public String toString() {
