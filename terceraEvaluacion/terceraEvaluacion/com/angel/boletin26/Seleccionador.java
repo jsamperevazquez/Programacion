@@ -15,7 +15,7 @@ public class Seleccionador extends SeleccionFutbol{
 
     // Método de clase
     public void seleccionarJugador(){
-        System.out.println("El seleccionador " + super.getNombre()+"" + super.getApellidos()+ " selecciona jugadores");
+        System.out.println("El seleccionador " + super.getNombre()+" " + super.getApellidos()+ " selecciona jugadores");
     }
 
     //toString()

@@ -29,25 +29,25 @@ public class Futbolista extends SeleccionFutbol{
     // Métodos sobreescritos
     @Override
     public void concentrarse(){
-        System.out.println("El jugador " + super.getNombre() + "" + super.getApellidos()+ " se concentra");
+        System.out.println("El jugador " + super.getNombre() + " " + super.getApellidos()+ " se concentra");
     }
     @Override
     public void viajar(){
-        System.out.println("El jugador "+ super.getNombre() + "" +super.getApellidos() + " viaja");
+        System.out.println("El jugador "+ super.getNombre() + " " +super.getApellidos() + " viaja");
     }
     @Override
     public void entrenar(){
-        System.out.println("El jugador "+ super.getNombre() + "" +super.getApellidos() + " entrena");
+        System.out.println("El jugador "+ super.getNombre() + " " +super.getApellidos() + " entrena");
     }
     @Override
     public void jugarPartido(){
-        System.out.println("El jugador "+ super.getNombre() + "" +super.getApellidos() + " juega partido");
+        System.out.println("El jugador "+ super.getNombre() + " " +super.getApellidos() + " juega partido");
     }
 
 
     // Métodos de clase
     public void entrevista(){
-        System.out.println("El jugador "+ super.getNombre() + "" +super.getApellidos() + " esta en una entrevista");
+        System.out.println("El jugador "+ super.getNombre() + " " +super.getApellidos() + " esta en una entrevista");
     }
 
     // toString de la clase

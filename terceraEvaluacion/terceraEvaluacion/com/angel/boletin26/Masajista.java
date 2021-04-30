@@ -28,19 +28,19 @@ public class Masajista extends SeleccionFutbol{
     // Métodos sobreescritos
     @Override
     public void viajar(){
-        System.out.println("El masajista "+ super.getNombre() + "" +super.getApellidos() + " viaja");
+        System.out.println("El masajista "+ super.getNombre() + " " +super.getApellidos() + " viaja");
     }
 
 
     // Método de la clase
     public void darMasaje(){
-        System.out.println("El masajista "+ super.getNombre() + "" +super.getApellidos() + " esta dando masajes");
+        System.out.println("El masajista "+ super.getNombre() + " " +super.getApellidos() + " esta dando masajes");
     }
 
     @Override
     public String toString() {
         return  " Masajista : " + super.toString() +
-                "titulacion= " + titulacion +
-                "anosExperencia= " + anosExperencia;
+                " titulacion= " + titulacion +
+                " anosExperencia= " + anosExperencia;
     }
 }

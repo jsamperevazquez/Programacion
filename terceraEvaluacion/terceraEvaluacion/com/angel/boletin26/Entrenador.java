@@ -23,19 +23,19 @@ public class Entrenador extends SeleccionFutbol{
     // Métodos sobreescritos
     @Override
     public void concentrarse(){
-        System.out.println("El entrenador " + super.getNombre()+"" + super.getApellidos()+ " se concentra");
+        System.out.println("El entrenador " + super.getNombre()+" " + super.getApellidos()+ " se concentra");
     }
 
     @Override
     public void viajar(){
-        System.out.println("El entrenador "+ super.getNombre() + "" +super.getApellidos() + " viaja");
+        System.out.println("El entrenador "+ super.getNombre() + " " +super.getApellidos() + " viaja");
     }
 
 
 
     // Método de clase
     public void planificarEntrenamiento(){
-        System.out.println("El entrenador "+ super.getNombre() + "" +super.getApellidos() + " esta planeando entreno");
+        System.out.println("El entrenador "+ super.getNombre() + " " +super.getApellidos() + " esta planeando entreno");
     }
 
     //toString de la clase

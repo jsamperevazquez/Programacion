@@ -66,9 +66,9 @@ public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol{
     @Override
     public String toString() {
         return
-                "id= " + id +
-                "nombre= " + nombre +
-                "apellidos= " + apellidos +
-                "edad= " + edad ;
+                " id= " + id +
+                " nombre= " + nombre +
+                " apellidos= " + apellidos +
+                " edad= " + edad ;
     }
 }
