@@ -55,7 +55,8 @@ Asignatura de Programación
 - [Boletín 22](https://github.com/jsamperevazquez/Programacion/tree/main/terceraEvaluacion/terceraEvaluacion/com/angel/boletin22) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Ventana swing con evento añadir filas a tabla**  
 - [Boletín 23](https://github.com/jsamperevazquez/Programacion/tree/main/terceraEvaluacion/terceraEvaluacion/com/angel/boletin23) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Ventana swing calculadora funcional**  
 - [Boletín 24](https://github.com/jsamperevazquez/Programacion/tree/main/terceraEvaluacion/terceraEvaluacion/com/angel/boletin24) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **4 Clases que heredan la una de la otra(herencia)**  
-- [Boletín 25](https://github.com/jsamperevazquez/Programacion/tree/main/terceraEvaluacion/terceraEvaluacion/com/angel/boletin25) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **SuperClase Barco con tres subC de tipo de barco(herencia y polimorfismo)**  [Esquema](https://github.com/jsamperevazquez/Programacion/blob/main/terceraEvaluacion/terceraEvaluacion/com/angel/boletin25/Na%C3%BAtica.jpg)
+- [Boletín 25](https://github.com/jsamperevazquez/Programacion/tree/main/terceraEvaluacion/terceraEvaluacion/com/angel/boletin25) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **SuperClase Barco con tres subC de tipo de barco(herencia y polimorfismo)**  [Esquema](https://github.com/jsamperevazquez/Programacion/blob/main/terceraEvaluacion/terceraEvaluacion/com/angel/boletin25/Na%C3%BAtica.jpg)  
+- [Boletín 26](https://github.com/jsamperevazquez/Programacion/tree/main/terceraEvaluacion/terceraEvaluacion/com/angel/boletin26) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Herencia y polimorfismo con interface selección de fútbol**
 
 
 
